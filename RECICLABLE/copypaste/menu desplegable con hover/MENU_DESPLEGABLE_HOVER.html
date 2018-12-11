@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>menu</title>
+	<style type="text/css">
+		
+		*{
+			padding: 0px;
+			margin: 0px;
+		}
+
+		#header{
+			margin:0px auto;
+			width:500px;
+			font-family:Arial;
+		}
+		ul, ol{
+			list-style: none;
+		}
+
+		.nav li a{
+		background-color: black;
+		color:white;
+		text-decoration: none;
+		padding: 10px 15px;
+		display: block;
+		}/*les damos la forma de lista y sus respectivos colores, luego habra que organizarla*/
+		.nav li a:hover{
+		background-color: #434343;
+		}
+		.nav > li{
+			float:left;
+		}/*fue lo que hizo que los colocar en horizontal, y el ">" solo significa directo*/
+		.nav li ul {
+			display:none;
+			position: absolute;
+			min-width: 140px;
+		}/*es importante que tenga una posicion absolute para que quede bien y la de min-width le da un ancho */
+
+		/*importante, la razon por la que empece a estudiar*/
+		.nav li:hover > ul{/*le dijimos que las listas que esten directas a un ul se muestran en forma de bloque osea que se hagan visibles*/
+			display: block;
+		}/*le dijimos que las listas que esten directas a un ul se muestran en forma de bloque osea que se hagan visibles*/
+
+		.nav li ul li{
+			position: relative;
+		}/*aqui solo queremos adaptar la segunda lista para que me aparesca a un lado, por lo tanto coloque un position relative, para que me permita trabajar todos los elementos del li como un relativo y moverlo como me de l gana*/
+		.nav li ul li ul{
+			right: -140px;
+			top:0;
+		}/*ya habiendo  creado una posicion raltiva el objeto se colocara al lado de la caja para que se vea bien*/
+	</style>
+</head>
+<body>
+	<div id="header">
+		
+		<ul class="nav">
+			<li><a href="#">Inicio</a></li>
+
+			<li><a href="#">Servicios</a>
+				<ul>
+					<li><a href="#">submenu 1</a></li>
+					<li><a href="#">submenu 2</a></li>
+					<li><a href="#">submenu 3</a></li>
+					<li><a href="#">submenu 4</a>
+						<ul>
+							<li><a href="#">submenu 1</a></li>
+							<li><a href="#">submenu 2</a></li>
+							<li><a href="#">submenu 3</a></li>
+							<li><a href="#">submenu 4</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li><a href="#">Acerca de</a>
+				<ul>
+					<li><a href="#">submenu 1</a></li>
+					<li><a href="#">submenu 2</a></li>
+					<li><a href="#">submenu 3</a></li>
+					<li><a href="#">submenu 4</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Contacto</a></li>
+		</ul>
+	</div>
+	
+</body>
+</html>

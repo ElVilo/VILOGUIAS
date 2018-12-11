@@ -1,0 +1,468 @@
+-------------------------------VILO GUIA JAVA SCRIPT--------------------------------------
+<script></script>
+<script src=""></script>
+//     comentario de una linea
+/**/ comentario de dos lineas
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////OPERADORES LOGICOS//////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// > -mayor que          >>>>>>>>>>>>
+// < -menor que          <<<<<<<<<<<<
+// >= -mayor o igual que >=>=>=>=>=>=
+// <= -menor o igual que <=<=<=<=<=<=
+// == -igual que         ============
+// === -igual cantidad, igual información y igual tipo de dato								============
+// != -distinto de       !=!=!=!=!=!=
+// && - y, ademas    &&&&&&&&&&&&&&&&
+// || -or,o          ||||||||||||||||
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////DECLARAR VARIABLES///////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+var nombre = "Texto";
+/*asi se inicializa una varible en js, js es muy listo y no necesitas especificar el tipo de variable que estas utilizando, incluso las puedes declarar sin la palabra var, aunque es poco recomendable y se concadena con el simbolo "+" y tambien podemos hacer operacion dentro de las variables EJEMPLO: 
+var nombre="hola gabriel", edad=20 + 1; 
+alert(nombre + " " + edad);
+*/
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////Tipos de Datos///////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Numericos
+			var edad=19; //entero
+			var sueldo=22.2345// Flotante
+//String - Cadena de Texto
+			var Nombre="Gabriel"; //Cadenas de Texto
+			var vilo= "\" super vilo \" ";
+//Array - Arreglo
+			var amigos = ["Carlos", "Alejandro", "Cesar", 22, true]; //un Arreglo con muchos elementos
+			///////EJEMPLO//////
+			document.write(amigos(0));
+//Object - objeto 
+			var object = {
+			color: "black,
+			size: 12
+			} /////te permite mover los valores de un objeto, muy util cuando te bajas un slaider de internet. los podras manipular con los objetos
+//Boolean - Boleano
+			var boleano=false//////puede ser o true o false
+//Undefined
+			var supervilo; /////cuando iniciamos una variable y no le colocamos ningun valor, se considera una variable Undefined
+			
+//Null
+			var numero2 = 10;
+			var numero2 = null; ///// ase utiliza para borrar un valor a ningun valor, un valor inexistente
+//NaN
+			var Texto2 = "hola mundo";
+			document.write(Texto * 2);//// el valor Nan es uno que te mostrara cuando intentes hacer una formula imposible, algo que suelta el sistema cuando no sabe que hacer
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////FUNCIONES JAVA SCRIPT///////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+alert('Texto');
+/*esto nos crea una alerta en pantalla*/
+
+prompt('Texto', 'Valor');
+/*hace un cuadro donde tieene un titulo ('Texto') y un contenido que recolectara por pantalla ('Valor')*/
+
+console;
+/*hace una referencia a la consola*/
+			//////PRIMERA//////
+			console.log('Texto');
+			/*permite ingresar un texto en la consola del html*/
+
+VARIABLE.replace("VALOR_AGREGAR", VALOR_INSERTAR);
+/*permite tomar una cadena de texto y reemplazar un pedazo de la cadena con otro*/
+			
+Variable_Elemento.setAttribute("class/id","VALUE")
+/*esta etiqueta permite darle un class/id/action.... y un VALUE a un elemento que se quiera agregar al html desde el java script*/			
+
+VARIABLE_PADRE.insertBefore(Elemento , REFEREMCIA_HIJO_PRINCIPAL);
+/*permite crear un nuevo nodo en la paguina principal, tomando el nuevo elemento y tomando como punto de referencia al primer elemento hijo y lo coloca cobre el elemento hijo adentro del tag padre*/
+
+VARIABLE_PADRE.appeChild(VARIABLE);
+/*permite meter una VARIABLE compleja dentro de otra, y si estas agregando elementos al html, se agregara al final de el TAG padre
+EJEMPLO
+Variable_Elemento.appeChild(TEXTO);*/
+
+VARIABLE_PADRE.replaceChild(ELEMENTO_AGREGAR , ELEMENTO_ELIMINAR_REFERENCIA);
+/*el metodo replace permite tomar un elemento viejo y reeplazarlo con uno nuevo del tag padre*/
+
+VARIABLE_PADRE.removeChild(ELEMENTO_ELIMINAR_REFERENCIA);
+/*permite eliminar un elemento del tag padre/
+
+document;
+/*hace referencia al documento html, la RAIZ DE NUESTRO DOM*/
+			//////PRIMERA//////----------------------------------	
+			document.write('Texto');
+			/*permite ingresar un texto en el documento html*/
+			/////SEGUNDA/////-----------------------------------
+			document.getElementsByTagName("NOMBRE_ETIQUETA")
+			/*devolvera un arreglo que contendra todos los elementos que tengas ese nombre de etiqueta tip- los podras modificar luego con un innerHTML*/
+			/////SEGUNDA_ 2/////-----------------------------------
+			document.getElementsByTagName("NOMBRE_ETIQUETA")[NUMERO_POSICION_TAG]
+			/*devolvera una variable unica que contendra el elemento que se encuentre en la posicion especificada que tengas ese nombre de etiqueta 
+			/////SEGUNDA_ 3/////-----------------------------------
+			document.getElementsByTagName("NOMBRE_ETIQUETA")[NUMERO_POSICION_TAG].parentNode
+			/*devolvera una variable unica que contendra el elemento padre que sea padre del elemento que especificaste  
+			/////SEGUNDA_ 4/////-----------------------------------
+					document.getElementsByTagName(/*nombre etiqueta*/) [/*numero de etiqueta*/] .onClick/* <---evento*/ = /*nombre funcion*/  ;
+			
+					//saca un elemento por su nombre y numero de etiqueta y le asigna un evento y funcion(MARAVILLOSO)//
+			
+		     //////TERCERA//////-----------------------------------
+			 
+			document.getElementsById ("Nombre_Id").value
+			/*permitira pasarle la informacion de un TAG indentificado por su ID y si le con el atributo VALUE permitira sacar el valor de ese TAG, que normalmente es un INPUT
+			
+			//////CUARTA//////-----------------------------------
+			 document.createElement("ELEMENTO")
+			 /*permite crear un elemento, osea una etiqueta de html*/
+			 EJEMPLO -<p></p>
+			 //////QUINTA//////-----------------------------------
+			 document.createTextNode("TEXTO")
+			 /*permite crear un texto/nodo, osea el contenido de caracteres que puede tener una etiqueta html, claro que solo es el texto para que se agregue tendrias que utilizar un appeChild
+			 EJEMPLO */
+			 EJEMPLO -<p>TEXTO</p>
+			 //////QUINTA//////-----------------------------------
+			 document.ELEMENT_TAG
+			 /*esta funcion devuelve todos los elementos del html que hayas solicitado en un arreglo */
+			 EJEMPLO-
+			 document.forms
+			 <htmlCollection [ <form> {} ]
+			 //////SEXTA//////-----------------------------------
+			 document.ELEMENT_TAG.[POSICION_X]
+			 /*esta funcion devuelve el elemento del html que hayas solicitado en una variable*/
+			 EJEMPLO-
+			 document.forms.[POSICION_X]
+			 <htmlCollection [ <form> {} ]	
+			 //////SEPTIMA//////-----------------------------------
+			 document.NOMBRE_ETIQUETA_NAME;
+			 /*esta funcion devuelve el elemento del html que tenga el NAME que le hayas solicitado*/
+			 EJEMPLO-
+			 document.nombre;
+			  <input name="nombre"> {} 	
+			//////OCTAVA//////-----------------------------------
+			 document.NOMBRE_NAME.NOMBRE_NAME_HIJO.TYPE;
+			 /*esta funcion devuelve el tipo de dato del html que tenga el NAME que le hayas solicitado*/
+			 EJEMPLO-
+			 document.formulario.nombre.type;
+			 "TEXT"
+			 //////NOVENA//////----------------------------------- document.NOMBRE_NAME.NOMBRE_NAME_HIJO.VALUE;
+			 /*esta funcion devuelve la infomacion, el VALUE del html que tenga el NAME que le hayas solicitado*/
+			 EJEMPLO-
+			 document.formulario.nombre.type;
+			 ""//////DECIMA//////----------------------------------- document.NOMBRE_NAME.NOMBRE_NAME_HIJO.FOCUS();
+			 /*esta funcion mandar el focus a un ELEMENTO en especifico*/
+			 EJEMPLO-
+			 document.formulario.nombre.focus;
+			 /*no podemos visualizarlo, pero esta mandando el foco hacia el input
+			 -tip- se utiliza cuando se entra a una paguina para hacer que el usuario no tenga que cliquear nada, sino que el foco se coloca solo sobre el input
+			 -tip_2-cuando validas el formulario, puedes mandar el focus alli para que el usuario sepa exatamente donde cometio el erroe
+			 */
+			 //////DECIMA_PRIMERA//////----------------------------------- document.NOMBRE_NAME.NOMBRE_NAME_HIJO.checked;
+			 /*esta funcion revisara el valor de un radio si ha sido clickado entonces devolvera un true y si no devolvera un false*/
+			 EJEMPLO-
+			 document.formulario.sexo.checked;
+			 -si clickeo-"truo" -sino- "false"
+			 */
+			///FIN///---------------------------------------------------
+variable_ELEMENTO.style.CSS_PROPIEDAD
+/*esta etiqueta te permite colocar cualquier estilo de css3 a una etiqueta/tag html de manera dinamica !es demaciado hermoso¡*/
+
+Variable_ELEMENTO.innerHTML = CADENA_TEXTO_HTML
+/*permite agregar contenido HTML a un elemento, esto quiere decir que si colocas <br> lo leera como un salto de linea*/
+
+variable_ELEMENTO.textContent = CADENA_TEXTO
+/*permite agregar un Texto a un elemento, pero solo texto no texto html por ejemplo si colocas <br> te saldra la palabra <br> y no hara ningun salto de linea*/
+
+variable_ELEMENTO.id = "XId"
+/*te permitira cambiar el valor del id es ese elemento/tag*/
+			
+variable_ELEMENTO.className = "Xclase"
+/*te permitira cambiar el valor de la clase de es ese elemento/tag*/
+
+variable_ELEMENTO.href = "Xhref"
+/*te permitira cambiar el valor de el href de es ese elemento/tag*/
+/////primera-------------------------------------------
+			VARIABLE_ELEMENTO.ETIQUETA_NAME;
+			 /*esta funcion devuelve el ELEMENTO del html que tenga el NAME que le hayas solicitado*/
+			 EJEMPLO-
+			 document.nombre;
+			  <input name="nombre"> {}
+/////segunda-------------------------------------------
+			VARIABLE_ELEMENTO.NOMBRE_NAME_HIJO.TYPE;
+			 /*esta funcion devuelve el TIPO de dato del html que tenga el NAME que le hayas solicitado*/
+			 EJEMPLO-
+			 document.formulario.nombre.type;
+			 "TEXT"
+/////tercera-------------------------------------------
+			 VARIABLE_ELEMENTO.NOMBRE_NAME_HIJO.VALUE;
+			 /*esta funcion devuelve la infomacion, el VALUE/VALOR del la etiqueta/tag||/input que tenga el NAME que le hayas solicitado*/
+			 EJEMPLO-
+			 document.formulario.nombre.VALUE;
+			 "Gabriel"
+/////cuarta-------------------------------------------	
+	 		VARIABLE_ELEMENTO.NOMBRE_NAME_HIJO.FOCUS();
+			 /*esta funcion mandar el focus a un ELEMENTO en especifico*/
+			 EJEMPLO-
+			 document.formulario.nombre.focus;
+			 /*no podemos visualizarlo, pero esta mandando el foco hacia el input
+			 -tip- se utiliza cuando se entra a una paguina para hacer que el usuario no tenga que cliquear nada, sino que el foco se coloca solo sobre el input
+			 -tip_2-cuando validas el formulario, puedes mandar el focus alli para que el usuario sepa exatamente donde cometio el erroe
+			 */
+/////quinta-------------------------------------------	
+			 VARIABLE_ELEMENTO.NOMBRE_NAME_HIJO.checked;
+			 /*esta funcion revisara el valor de un radio si ha sido clickado entonces devolvera un true y si no devolvera un false*/
+			 EJEMPLO-
+			 document.formulario.sexo.checked;
+			 -si clickeo-"truo" -sino- "false"
+			 */
+/////Fin-------------------------------------------	 
+parseFloat(Contenido_X);
+/*permite transformar un dato de tipo string a un dato tipo float*/
+
+parseInt(Contenido_X);
+/*permite transformar un dato de tipo string a un dato tipo entero*/
+
+setTimeout(FUNCION, DURACION );
+/*permite ejecutar una funcion dependiendo del tiempo que pase y se ejecuta una sola vez*/
+
+setInterval(FUNCION, DURACION);
+/*este es un bucle en el cual se ejecutara una funcion cada determinada duracion de tiempo*/
+
+		clearInterval(INTEVALO_ID);
+		/*un setinterval guardad en una variable sera el id, de manera que este codigo sea capaz de cerrar el ciclo que se ha creado*/
+		
+new Date();
+/*este objeto de js, permite manejar las fechas, dejado en blanco devuelve el valor de la fecha del equipo actual*/
+			------hora
+			VARIABLE_DATE.getHours();
+			/*permite sacar la hora de el equipo actual*/
+			------minuto
+			VARIABLE_DATE.getMinutes();
+			/*permite sacar la hora de el equipo actual*/
+			------segundo
+			VARIABLE_DATE.getSeconds();
+			/*permite sacar la hora de el equipo actual*/
+			------dia
+			VARIABLE_DATE.getDay();
+			/*permite sacar el dia actual de el equipo actual*/
+			------dia del mes--primero y asi
+			VARIABLE_DATE.getDate();
+			/*permite sacar la hora de el equipo actual*/
+			------mes
+			VARIABLE_DATE.getMonth();
+			/*permite sacar el dia del mes de el equipo actual*/
+			------año
+			VARIABLE_DATE.getFullYear();
+			/*permite sacar el año de el equipo actual*/
+			
+
+window.onload= NOMBRE_FUNCION
+//permite agregarle una funcion a la ventada por defecto//
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////FUNCIONES CON PROPIEDADES/////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////ARRAYS/////////////////-----------------------------------
+Variable_Array.length
+/*al colocarle esta funciona una variable tipo arreglo permitira sacar de ella el tamaño completo de el tamaño del arreglo*/
+
+Variable_Array.push("Valor_1", "Valor_2"...);
+/*al colocarle esta funciona una variable tipo arreglo permitira meter todo tipo de valores al final del arreglo*/
+
+Variable_Array.pop();
+/*al colocarle esta funciona una variable tipo arreglo permitira eliminar el ultimo elemento del arreglo*/
+
+Variable_Array.concat(Variable_Array_2);
+/*al colocarle esta funciona una variable tipo arreglo permitira hacer una fusión entre este arreglo y un segundo arreglo creando así un solo arreglo*/
+
+Variable_Array.join(" : ");
+/*al colocarle esta funciona una variable tipo arreglo permitira hacer una union entre cada elemento con el caracter que quieras, apareciendo este en el medio*/
+
+Variable_Array.sort();
+/*al colocarle esta funciona una variable tipo arreglo permitira ordenar los arreglos de manera alfabeticas*/
+
+Variable_Array[X].innerHTML
+/*permite sacar completamente el CONTENIDO HTML de un array que se encuentre en el DOM*/ 
+
+Variable_Array[X].innerHTML = CADENA_TEXTO
+/*permite sacar completamente el CONTENIDO HTML de un array que se encuentre en el DOM*/ 
+
+////////////////CADENAS DE TEXTO/////////////////-----------------------------------
+TEXTO.length 
+/*permite saber la cantidad de caracteres que tiene una cadena de texto*/
+
+TEXTO.substring(ENTERO)
+/*permite cortar la cadena desde el punto que señales, sirve para cortar cadenas de texto*/
+
+TEXTO.substr(ENTERO_DESDE , ENTERO_HASTA);
+/*permite cortar la cadena desde el punto que señales, hasta el punto que señales, sirve para cortar cadenas de texto*/
+
+TEXT.indexOf("CARACTER" , ENTERO_DESDE)
+/*nos devuelve un entero que nos dice en que posicion se encuentra el caracter que ingresamos y si le colocas un segundo parametro le indicaras desde donde puedes empezar a buscar*/
+
+TEXT.lastIndexOf("CARACTER" , ENTERO_DESDE)
+/*nos devuelve un entero que nos dice en que posicion se encuentra el caracter que ingresamos, pero de atras hacia adelante  y si le colocas un segundo parametro le indicaras desde donde puedes empezar a buscar, pero de atras hacia adelante*/
+
+TEXTO.replace(TEXTO, TEXTO_REEMPLASO)
+/*MUY INTERESANTE, nos permite tomar cualquier frase de tipo texto y lo busca y lo reemplaza*/
+
+TEXTO.toUpperCase(TEXTO)
+/*nos permite tomar un texto cualquiera y convertirlo a mayusculas*/
+
+TEXTO.toLowerCase(TEXTO)
+/*nos permite tomar un texto cualquiera y convertirlo a mayusculas*/
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////FUNCIONES/////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+function (){}
+function /*nombre de la funcion*/ (/*parametros que pide la funcion*/){/*tarea que ejecuta esta función*/}
+
+/*una funcion es un conjunto que acciones , que te permite ejecutar codigos y retornar valores*/
+EJEMPLO
+funcion Nombre(){
+var Nombre= "Gabriel"
+alert(nombre);
+}
+"Nombre"()	;	
+/*asi se llama a una función*/
+
+var Nombre = function(){
+var Nombre= "Gabriel"
+alert(nombre);
+}
+"Nombre"()	;	
+}
+/*así se llama la funcion desde una variable*/
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////FUNCION AUTOINVOCADA/////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+(function (){
+//codigos
+//codigos
+}())
+/*todo el codigo estara protegido*/
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////Array Arreglos//////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+var amigos = ["Gean","Cesar","Alex"];
+/*de esta manera se puede crear un arreglo en js y no tienes que especificar cuantos especios necesitas para el arreglo, solo los agregas y ya*/
+
+amigos [0];
+/*de esta manera podemos sacar cualquier dato de un arrray*/
+
+amigos [0]= "jesus"
+/*Conociendo el numero de el arreglo podemos cambiarlo*/
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////Condicionales//////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+if( Condicion ){
+	//instrucciones
+} else if ( Condicion ){
+	//instrucciones segundarias
+} else {
+	//instrucciones po defecto
+} 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////Ciclo For//////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+for ( Varible_inicializando ; Condicion ; variable_incremento){
+
+			//instrucciones
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////Ciclo While//////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Variable_inicializando;
+while ( Condicion ){
+		//instrucciones
+		variable_incremento
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////DOM//////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+DOM Document Object Mode
+el DOM es una manera de trabajar los elementos del documento HTML como variables de javascript
+tenes que tener en cuenta que cada etiqueta del html pertenece a el DOM, pero puedes almacenarlas en una variable con la cual la puedas modificar con java script
+recordar que es mejor trabajar los elementos del DOM con sus ID
+
+///////NODOS---------------------
+como es java script, no trabajaremos con una base de datos, por lo que cada vez que se salga de la paguina web, se perderan los datos
+Nodo, es una etiqueta del html
+Cualquier etiqueta html es un nodo
+
+		// 1.-Crear el elmento 
+		-ALGO ASÍ: <h2></h2>
+		-EJEMPLO: 
+		var titulo = document.createElement("h2");		
+        //2.- Crear un nodo de texto
+		-ALGO ASÍ:"hola mundo"
+		var contenidoTitulo = createTextNode("Este es el titulo");		
+        //3.- añadir el nodo de texto al elemento
+		- ALGO ASÍ: <h2>"Este es mi titulo"</h2>
+		titulo.appendChild(contenidoTitulo);
+        //4.-agregar atributos al elemento
+		-ALGO ASÍ: <h2 name="Titulo" value="Valor">"Este es mi titulo"</h2>
+		-EJEMPLO: 
+		titulo.setAttribute("Titulo", "Valor");
+        //5.-agregamos el elemento al documento
+		-EJEMPLO:
+		document.getElementsById("subtitulo").appeChild(titulo);
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////EVENTOS COMO PROPIEDADES DE HTML//////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+onClick="Funcion();"
+/*se activara esta acción en comllias cuando se de un click en esta etiqueta*/
+
+onmouseover="Funcion();"
+/*se activara esta acción en comllias cuando el mouse/cursor este encima de esta etiqueta*/
+
+onmouseout="Funcion();"
+/*se activara una vez el mouse deje de estar encima de la etiqueta*/
+
+onfocus="funcion();"
+/*muy usado, activara un evento cuando el usuario tenga el foco en el elemento -tip-mayormente se usa en los formularios en los inputs*/
+
+onchage="funcion();"
+/*es un evento que se activa solo cuando se ha entrado a un input y se ha cambiado una informacion dentro de el EJEMPLO- se puede utilizar para verificar en la base de datos si el usuario esta disponible o no, y si no esta disponible se puede programar para que no te deje pasar -practica pendiente-*/
+
+onsubmit="funcion();"
+/*submit es el metodo que se le suele agregar al FORMULARIO para que este pueda mandar los datos a otra paguina*/
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////EVENTOS addEventListener()//////////////////////////////////////////////////////////////
+////////////////////////////////////////////////FORMULA////////////////////////////////////////////////////////////////
+	EL METODO TIENE 3 ARGUMENTOS
+			1.-	nombre del evento //EJEMPLO- click
+			2.-    funcion a ejecutar //EJEMPLO- mostrar();
+			3.-    valor booleano    //true or false
+----------------------------------------------fin explicación---------------------------------
+----------------------------------------------Ejemplo---------------------------------
+////paso /////
+var Variable_ELEMENTO=document.getElementsByTagName("NOMBRE_ELEMENTO_TAG")  ["NUMERO_POSICION"]
+
+/*creamos una variable_elemento que sea el equivalente a la etiqueta del html*/
+////paso dos////
+
+Variable_ELEMENTO.addEventListener("EVENTO", FUNCION_SIN_PARENTESIS , BOOLEANO_OPCIONAL);
+
+/*le colocamos un evento a la variable_elemento que ocasionara que llame a la funcion si se activa el evento en esta variable que equivale a una etiqueta en html y el booleano es opcional*/
+
+-----------------------------------------------fin ejemplo-------------------------------------
+
+removeEventListener("EVENTO", FUNCION_SIN_PARENTESIS);
+/*permite eliminar un event listener que ya haya sido invocado*/
+
+e.type
+/*Metodo especifico el cual la e es el valor de un listener y el type te permite saber que clase de tipo de listener es el que le estan pasando a la funcion -tip- ayuda en las condicionales*/
+
+e.preventDefault();
+/*Metodo especifico el cual la e es el valor de un listener y el type te permite bloquear alguna accion por defecto que tenga el elemento/tag */
+
+e.target
+/*Metodo especifico el cual la e es el valor de un listener y el type te permite saber que clase de elemento/tag le estas aplicando el listener -tip- ayuda en las condicionales*/
+

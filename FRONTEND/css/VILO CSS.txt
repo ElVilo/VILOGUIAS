@@ -1,0 +1,558 @@
+------PUEDES MODIFICAR CUALQUIER ETIQUETA DEL HTML EJEM------
+body{}
+head{}
+div{}
+img{}
+li{}
+a{}
+--------paleta de colores-----------
+breckts
+control + k
+
+sub lime text 3
+control + shift + c
+
+
+------PUEDES MODIFICAR CUALQUIER  CLASS DE UNA ETIQUETA DE HTML LLAMANDOLA CON UN "." EJEM------
+.wroper{}
+.main{}
+.container{}
+------PUEDES MODIFICAR CUALQUIER ID DE UNA ETIQUETA DE HTML LLAMANDOLA CON UN "#" EJEM------
+#COLUM_1{}
+#nombre{}
+"apellido{}
+-------Puedes modificar cualquier NAME de una etiqueta HTML llamandola con un [name="x"] EJEM-----------
+input[name="nombre"]{}
+input[name="apellido"]{}
+input[name="cedula"]{}
+---------tienes la  opcion de colocar una parte de el string y buscara todo aquello que comience con eso-------
+input[name"mi teclado no la tiene"="cedula"]{}
+--------tienes la  opcion de colocar una parte de el string y buscara todo aquello que termine con eso-------
+input[name$="cedula"]{}
+--------tienes la  opcion de buscar cada caracter del string y lo encontrara sin importar su posicion-------
+input[name*="cedula"]{}
+
+--------PREFIX----------------------------------------------------------------------------------------------------------------------
+//chrome y safari// 			-webkit-  (estos prefix se utilizan para que el css ruede en chrome y safari)
+//mozilla firefox// 				 -moz-(estos prefix se utilizan para que el css ruede en mozilla firefox)
+//opera//            				  -o-(estos prefix se utilizan para que el css ruede en opera)
+/internet explore/				-ms-(internet explore)
+---------------------FORMAS FLUIDAS DE FUENTE E IMAGENES-------------------------------------------------------------------
+
+Font-size: 1 em;
+//calibrara las fuentes a un tamaño por lo que el usuario podra cambiar el tamaño de las fuentes en todo momento,  a esto se le llama fuentes fluidas
+
+.img {	max-width:100%;}
+//las imagenes por defecto pueden ser mas grandes que su div o mas pequeña colocando esto hara que se amolde a su div y se pueda volver fluido
+-------------------------------------------VISIBILIDAD----------------------------------------------
+ visibility: hidden;
+ //afecta la visivilidad de una caja en este modo solo la enconde
+ 
+  visibility: true;
+   //afecta la visivilidad de una caja en este modo la hace aparecer
+
+   display: none;
+   //destruye el objeto osea que no lo despliega
+
+-------------------------------------FONT EXTERNO------------------------------------
+
+@font-face{
+(se utiliza para crear una nueva fuente dentro de este css y asi alterar el tipo de fuente)
+
+		font-famili: "nombre deseado";
+		
+		src:  url("ruta relativa de el archivo con la nueva fuente") ;
+}
+font-family:"nombre deseado eleguido";
+
+--------------------MEDIA SCREEN-------------------------------------------------------------------------------------------------
+	 @media scren and(//*secoloca el max o minimo ancho de la paguina web la cual se amoldara a la web "max-width:" o "max-width"*//){
+		//*se colocan las classes que cambiaran cuando se active este media*//
+		//*practicamente se hace la paguina web de nuevo para otro dispositivo*//
+	 }
+	 
+-----------------------MEDIA QUERY----------------------------------------------------------------------------------------------
+	 @media only screen and (-webkit-min-device-pixel-ratio:2){
+		div{
+		background: url("image/loquesea@2x.png);
+		}
+	  }
+	 
+
+
+
+---------BACKGROUND----------------------------------------------------------------------
+
+
+background:;
+(colores)
+
+background-position:center;
+(determina la posicion de la imagen)
+
+background-attachament:contain;
+(no se)
+
+background-size:cover;
+(nose)
+
+-------PUEDES ALTERAS LAS FUENTES O FONT---------------------------------------------------------------------------------
+font:(normal,bol,bolder) (tamaño de letra 2em(recordar que el em multiplica la funte normal) (tipo de fuente 'Arial');
+//*se puede cambiar todas las propiedades de las letras de golpe*//
+
+font-size:;(cambia el tamaño de las fuentes)
+
+font-weight:(bold ó bolder);(cambia las fuentes a negritas, bold)
+
+font-family:;
+//*se colocan las classes que cambiaran cuando se active este media*//
+
+color:; (cambia el color de las fuentes)
+
+text-transform:uppercase;
+(permite transformar las fuentes todas al tamaño de mayusculas)
+
+text-shadow: (color, horizontaldesplazamiento px, verticaldesplazamientopx, difuminacion);
+
+-------PUEDES ALTERAR LOS TAMAÑOS-----
+
+width:(colocas el tamaño del ancho que deseas en px ó %);
+
+height:(colocas el tamaño del alto que deseas en px ó %);
+
+resize:vertical,horizontal,both;(el mismo usuario podra cambiar el tamaño de el elemento)
+
+line-height:40px;
+(altera el alto de la propiedad y ademas que modifica los botones A de manera que siempre quedan al centro del todo)
+
+box-sizing:border-box;
+(esta propiedad te permite acomodar todos los pixeles de alguna otra propiedad con respecto a el wigth principal de esta etiqueta ej si teniamos en esta etiqueta 100px y el border-box nos lo arruino, pues ahora border-box se acoplara a estos 100px)
+
+-------PUEDES CAMBIAR LAS PROPIEDADES DE LOS ELEMENTOS QUE ESTAN DENTRO-----
+
+background:(esta etiqueta permite cambiar el fondo );
+
+color:(esta etiqueta permite cambiar el color de un String);
+
+text-decoration:none(underline//subrayado); (se utiliza para decorar el texto con determinados elementos)
+
+list-style:none; (se utiliza para decorar las li de los ul )
+
+clear:both;
+(limpia el nav)
+
+
+
+-------------------------------------------------POSICIONES--------------------------------------------------------------
+
+position:(puede alterar la posicion de una caja colocandola donde desees) 
+		
+	top:;
+		(este te permite colocar la posicion de separacion a el tope, de una manera de ordenar con respecto a su respectivo directorio)
+	bottom:;
+		(este te permite colocar la posicion de separacion a el fondo-final, de una manera de ordenar con respecto a su respectivo directorio)
+	right:;
+		(este te permite colocar la posicion de separacion a la derecha, de una manera de ordenar con respecto a su respectivo directorio)
+	left:;
+		(este te permite colocar la posicion de separacion a la izquierda, de una manera de ordenar con respecto a su respectivo directorio)
+
+			position:absolute; (el elemento quedara respecto a la caja respetiva y se podra modificar absolute te permitira que la caja quede suelta, no importa donde esta esta quera al principio de la ventana de manera absoluta))
+													
+			position:relative; 
+			(el elemento quedara con respecto a la caja que lo contenga, no al body sino a su etiqueta padre)
+		
+			position:fixed;
+			(esta posicion sera estatica a la posicionque se elije y no se movera jamas ni con un scroll lo cual es genial para nav y anuncion)
+		
+
+
+
+text-align:(se puede modificar la posicion de un texto con respecto a su cada) center(posiciona el texto en el centro);
+(tambien se usa en los nav para posicionar los textos en donde queramos)
+
+			center
+			(alinea al centro)
+			right
+			(alinea a la derecha)
+			left
+			(alinea a la izquierda)
+			bottom
+			(alinea al fondo)
+			top
+			(alinea al top)
+			
+text-indent:;
+(generara un margen en el texto)
+
+transform: ;
+
+				translateX(0px)
+				(este codigo permitira que la caja sea respectiva a ella misma, de modo que si tienes un elemento, este estara con respecto a esta caja y no al body... tambien puede mover la caja de lugar en el borde de las x) (lo utilizamos para que no se descuadren los efectos de la caja y si se coloca un valor se usa para mover la caja de dirección)
+
+                translateY(0px)
+				(permite mover la caja en el eje de las y)
+				
+				rotate(Xdeg)
+				(permite rotar la caja)
+				
+				scale(0(multiplicador))
+				(permite cambiar el tamaño de algun elemento siendo 1 el 100%, LO PUEDES MODIFICARA GUSTO)
+							scale(1 , -1)
+							(permite darle la vuelta al elemento y crear una especie de efecto espejo)
+							
+				rotate(360deg)
+				(permite rotar un elemento los grados deseados)
+				
+				skew(360deg)
+				(rotacion diagonal ME ENCANTA ES COMO EL ITALICA)
+
+resize:vertical,horizontal,both;(el mismo usuario podra cambiar el tamaño de el elemento)				
+----------------------------------------GENERAR 'MARGIN:;'--------------------------------------------------------------.
+
+margin:(cantidad de separacion que existira por todo al rededor de la etiqueta "caja", con cualquier otro elemento)
+(cabe mencionar que la pagina siempre tendra por defecto un margin,el cual es bueno borrarlo en el "*{")
+
+ auto(este elemento le dara un margen automatico a la caja en todo el centro de la paguina);
+ 
+ relative(sin datos)
+ 
+			margin-top:(cantidad de separacion que existira en la parte superior de la etiqueta o "caja", con cualquier otro elemento);
+			margin-left:(cantidad de separacion que existira en la izquierda de la etiqueta o "caja", con cualquier otro elemento);
+			margin-right:(cantidad de separacion que existira en la derecha de la etiqueta o "caja", con cualquier otro elemento);
+			margin-bottom:(cantidad de separacion que existira en el fondo de la etiqueta o "caja", con cualquier otro elemento);
+--------------------------------------------COLOCAR  ' PADDING:;'-------------------------------------------------------
+
+padding:;(se utiliza para expandir desde el punto de el elemento de el div hasta el div)
+
+			padding-top:(cantidad de expancion que existira en la parte superior de la etiqueta o "caja", con respecto al elemento);
+			margin-left:(cantidad de expancion que existira en la parte izquierda de la etiqueta o "caja", con respecto al elemento);
+			margin-right:(cantidad de expancion que existira en la parte derecha de la etiqueta o "caja", con respecto al elemento);
+			margin-bottom:(cantidad de expancion que existira en la parte inferior de la etiqueta o "caja", con respecto al elemento);
+-------------------------------------------------CREAR 'BORDERS:;'-----------------------------------------------------------
+border: (cantidad de pixeles que tendra el borde) ("solid" + el color que deseas en tu borde);
+
+				border-style:solid (decide colocar unborde que se mostrara con color);
+
+				border-width: 0px 0px 0px 0px (colocara la anchura de cada lado de el corde en sentido de las agujas del reloj);
+
+				border-color:transparent transparent transparent transparent (coloca un color a cada lado de el borde, en sentido de las agujas del reloj);
+				
+outline:(cantidad de pixeles que tendra el borde) "dashed" (  el color que deseas en tu borde);
+
+				outline-offset:(pixel de separación con respecto a su caja);
+
+
+--------------------------------------------------SEUDO ELEMENTOS-----
+div::before{
+			content:(elemento obligatorio que perite colocar un elemento string ejem: "hola mundo" url(estrella.png) y este aparecera ó hasta dejarse en blanco///los dos puntos señalan que trabajamos con un seufo elemento);
+ }
+div::after{
+			content:(elemento obligatorio que perite colocar un elemento eje"hola mundo", url(estrella.png) y este aparecera ///los dos puntos señalan que trabajamos con un seufo elemento);
+}	 
+p::first-letter{
+			(te permite modificar la primera letra de un parrafo y convertilo en algo más bonito)
+}	 
+p::first:line{
+			(te permite modificar la primera linea de un parrafo y convertilo en algo más bonito)
+}	
+----------------------------------------------SEUDO CLASES-----//algunas seudo clases solo pertenecen a ciertos elementos //
+div:hover{
+			(este poder se activara cuando el mouse pase por encima de el, solo y unicamente)
+}	 
+input:focus{
+			(mantendra este foco "poder" solo hasta que lo allan "cliqueado" y luego nunca perdera el efecto//onli with "a")
+}
+div:action{
+			(este poder lo usaras cuado justo en el momento de el click y luego perdera el efecto)
+}
+a:link{
+			(permite realizar codigos que alteren los links de los a  que no hayan sido tocados)
+}
+a:visited{
+			(la contraria de link se activara luego de que hayan tocado el link de a)
+}
+
+li:nth-of-type(1)
+			(esta forma permite utilizar un elemento especifico de alguna etiqueta)
+
+
+ul li:first-child{
+			(este elemento llamara al primer hijo de estos elementos)
+}
+
+ul li:last-child{
+				(este elemento puede alterar el ultimo elemento de una lista)
+}
+
+ul li:nth-child(2){
+					(este elemento puede alterar el ultimo elemento de una lista)
+}
+ul li:nth-child(odd){
+					(este elemento puede alterar los elementos inpares de una lista)
+}
+ul li:nth-child(even){
+					(este elemento puede alterar los elementos pares de una lista)
+}
+ul li:only-child{
+					(este elemento puede alterar el unico elemento hijo de una lista)
+}
+
+input:valid{
+(este elemento puede alterar la apariencia de un input que sea valido)
+}
+input:invalid{
+(este elemento puede alterar la apariencia de un input que no sea valido)
+}
+------------------------------------------------------------TRANSICIONES--------------------------------------------------------
+ transition:300ms all ease; 
+ (afecta la transicion de una imagen a otra)
+  transition: transform 1s ease 0.5s; 
+ (afecta la transicion de una imagen a otra)
+ 
+				transition-duration:0.3s;
+				(afecta los segundos de una animacion)
+				
+transition: transform 1s ease-in-out 0.4s;
+ 
+ 
+ ------------------------------------DEGRADADO Y SOMBRAS------------------------------------------------------
+ 
+ background: -prefix-linear-gradient((posicion"top,bottom,right,left,25deg") (porcentaje que ocupa), (primer color) (porcentaje que ocupa), (segundo color) (porcentaje que ocupaS)); 
+				
+ 
+/*codigo para hacer un pie de paguina
+background: linear-gradient( 25 deg, white 45% #aaa 50%, #ccc 60%, white); 
+*/ 
+
+  background: -prefix-radial-gradient((posicion"center,top,bottom,right,left,25deg") (forma ellipse ó circle), (primer color) (porcentaje que ocupa) , (segundo color)  (porcentaje que ocupa)); 
+ 
+
+ /*codigo para hacer un pie de paguina negrito
+ background: radial-gradient(
+    ellipse at 50% 100%, 
+    rgba(0,0,0,0.6)8%,
+    rgba(0,0,0,0) 80%
+    );
+*/ 
+ (degradar es una propiedad que permite medir los puntos de un ellipse para  cambian los colores de un elementos y crear combras elipticas)	
+ 
+	
+box-shadow: 0px (horizontal) 0px (vertical) 0 px (difuminado) 0px (grosor) black (color)  inset (para invertir la direccion de la sombra y se vuelva interna);
+
+text-shadow: 0px (horizontal) 0px (vertical) 0 px (difuminado) 0px (grosor) black (color)  inset (para invertir la direccion de la sombra y se vuelva interna);
+
+opacity:1;(funciona de 0 to 1 y se utiliza para dar transparencia )
+
+----------------------BACKGROUND----------------------------------------------------------------------
+background-image:;
+(permite agregar una imagen como fondo)
+
+				url(), url() ;
+				(permite colocar la ruta de la imagen del fondo)
+				
+background-position:;
+(permite dar posiciones a los backgrounds)
+
+				bottom center, top left, right ;
+				(permite mover la imagen a donde prefieras)
+				
+background-repeat:;
+(permite aclarar si se desea repetir la imagen)
+
+				no-repeat;
+				(no se repetira la imagen)
+				
+---------------SELECTORE-----------------------
+img[alt^="foto"]{}
+(de esta mamera podemos seleccionar la imagen cuyo alt empiece con un "foto")
+
+img[alt*="foto"]{}
+(de esta mamera podemos seleccionar la imagen cuyo alt contenga en algun lado un "foto")
+
+img[alt$="foto"]{}
+(de esta mamera podemos seleccionar la imagen cuyo alt termine con un "foto")
+
+
+------------------Float flotamiento-----------------------------
+overflow:hidden;
+(esta propiedad hace que todo elemento que supere el tamaña de este contenedor, el exceso se volvera invisible)
+
+				hidden, auto
+				(ambos funcionan recomendable colocarlos en el "*{")
+				
+box-sizing:border-box;
+(limpia los paddings y los border y cualquier cosa que expanda el tamaño de la caja para que siempre ocupe su width solamente y nada más//execpto los margin)
+
+				border-box
+			  (funcionan recomendable colocarlos en el "*{")
+
+
+
+float:;
+(este elemento permite romper el flujo natural del navegador y ordenar los cuadro como uno quiera a la derecha o a la izquierda)
+
+			right
+			(lanzara el elemento flotado a la derecha lo cual no le parara a lo que alla en ese lugar)
+			
+			left
+			(lanzara el elemento flotado a la izquierda lo cual no le parara a lo que alla en ese lugar)
+			
+
+
+			
+clear:;
+(permite limpiar el flujo natural hacia los lados, quiere decir que si usaste un float este puede revertir el posicionamiento y colocar un elemento dejajo de este elemento flotante)
+
+			clear:both;
+			(permite limpiar el flujo hacia los dos lados de el navegador colocando debajo del elemento flotante)
+			(crea un div que separara los flotantes del resto)
+
+			
+			
+			
+			
+------------------------POSICIONAMIENTO RELATIVO, ABSOLUTO, FIXED------------------------------------------------
+position:relative;
+(codigo que hara que la imagen de pueda desplazar con respecto a la etiqueta que la contenga, y aun moviendose se mantendra el flujo que tenia antes, asi que los demas elementos no deberian moverse)
+
+z-index:;
+(esta propiedad lo que hace es darle un numero de prioridad a la imagen de modo que la que tenga mayor prioridad sera la que se muestre en pantalla)
+
+position:absolute;
+(se movera al fondo y quedara con respecto a su caja superior, la caja perdera su flujo, y se mandara al fondo, por lo que los demas elementos deberian moverse)
+
+position:fixed;
+(esta caja quedara con respecto a su superio y esta tendra un poder de no moverse ni con un scroll,rompe su flujo y se manada al fondo, por lo que las demas cajas deberian moverse )
+
+
+
+
+-------------------------------------Flex box-----no utilizar (line-height:;)----------------------------------
+display:flex;
+(desplega los elementos del contenedor de manera flexible)
+
+flex-grow:1;
+(solo funciona en el elemento hijo)
+(al poner "1" le estas diciendo que abarque el 100% de el contenedor padre-flex)
+(cambiara su ancho por defecto)
+
+flex-shrink:0;
+(no cambiara su ancho por defecto)
+(al poner "1" le estas diciendo que podra modificar su estructura por defecto)
+
+flex-basis:100%;
+(permite que los elementos de mantengan su tamaño original)
+
+flex: 1 1 auto;
+(utiliza el gorw, shrink  y basis almismo tiempo y este codigo permite que cambie el tamaño de los elementos //hay que saber jugar con el porque es lo que se usa para diseño responsive)
+(flex se utiliza para crear un crecimiento constante y automatico de los elementos si se llega a cambiar el tamaño de la vista)
+
+
+
+order:(cualquier numero);
+(permite ordenar los elementos hijos al orden que le alteres tu colocando de menor a mayor)
+
+
+
+flex-direction:; |row|row-reverse|column|
+(modifica los elementos hijo en horizontal y en filas)
+
+			flex-direction:row;
+			(fila por defecto,una linea horizontal y de izquierda a derecha desde el primer elemento hasta el ultimo)
+			
+			flex-direction:row-reverse;
+			(fila-inversa, el flujo ira en una linea de derecha a izquierda contando desde el primer elemento hasta el ultimo)
+			
+			flex-direction:column;
+			(columna, el flujo hara una linea para cada elemento y lo mantendra como cuando no tenia flex-box, ayuda mucho en el diseño responsivo, por que del resto no es muy vistoso)
+			
+flex-wrap:; |wrap|nowrap|
+(aumenta la cantidad de filas dependiendo de la cantidad de elementos hijos, envuele los elementos hijo, este mide la cantidad de elementos que van en cada linea)
+
+			flex-wrap:wrap;
+			(envuelve los elementos hijo de manera que se acoplaran con respecto a su tamaño deseado, el wrap hara una lista que una vez llena la primera linea saltara a la segunda linea)
+			
+			flex-wrap:nowrap;
+			(por defecto no envuelve, atributo por defecto que solo crea una linea donde acumulara todos los elementos)
+			
+flex-flow:;  |row|row-reverse|column|  and   |wrap|nowrap|
+(permite el direction y el wraper a la vez)
+			
+justify-content:; |flex-start|flex-end|center|space-between|space-around
+(este atributo modificara el contenido en los flex-box.... no alterara el flujo OJO solo los agrupara como una especie de text-aling)
+
+						flex-start
+						(causara que se alinen de izquierda a derecha respetando los ordenes de flujo)
+						
+						flex-end
+						(causara que se alinen de derecha a izquierda respetando los ordenes de flujo)
+						
+						center
+						(causa que los elementos se alineen en el centro respetando los ordenes de flujo)
+						
+						space-between
+						(causara que se cree un margin  gigante y no parejo entre cada elemento dando asi un espacion entre cada uno)
+						
+						space-around
+						(creara un margin normal y parejo entre cada objeto dando asi un espacio entre ellos)
+						
+aling-item:; |flex-end|flex-start|center|stretch|baseline|
+(solo funciona cuando los elementos hijo estan en una sola fila o columna)
+(permite modificar la posicion vertical de los contenedores hijos)
+
+						flex-end
+						(posicionara los elementos al final de el contenedor)
+						
+						flex-start
+						(posicionara los elementos al comienzo del contenedor)
+						
+						center
+						(posicionara los elementos en el medio de su contenedor(:´) ))
+						
+						stretch
+						(estron por defecto, su objetivo es que si no tienes un height//o colocaste un line-height// el stretch se encargara de generarle  un alto adecuado, mucho cuidado con esta propiedad ya que siempre esta activa)
+						
+						baseline
+						(resaltara font que tenga mayor tamaño)
+						
+align-content:; |flex-end|flex-start|center|space-between|space-around|
+(solo funciona cuando hay dos o más lineas de elementos en una fila o columna)
+(este atributo modificara el contenido en los flex-box.... no alterara el flujo OJO solo los agrupara como una especie de text-aling multiple)
+
+						flex-end
+						(posicionara los contenedores al final de el contenedor)
+						
+						flex-start
+						(posicionara los contenedores al comienzo del contenedor)
+						
+						center
+						(posicionara los contenedores en el medio de su contenedor(:´) ))
+						
+						space-between
+						(causara que se cree un margin  gigante y no parejo entre las lineas del contenedor dando asi un espacion entre cada uno notable)
+						
+						space-around
+						(creara un margin normal y parejo entre cada linea de contenedor dando asi un espacio entre ellos)
+						
+alig-self:;  |flex-end|flex-start|center|space-between|space-around|
+(solo funciona con un solo elemento hijo)
+(este atributo cambiara la posicion vertical de un elemento hijo)
+	
+	flex-end
+						(posicionara los contenedores al final de el contenedor)
+						
+						flex-start
+						(posicionara los contenedores al comienzo del contenedor)
+						
+						center
+						(posicionara los contenedores en el medio de su contenedor(:´) ))
+						
+						space-between
+						(causara que se cree un margin  gigante y no parejo entre las lineas del contenedor dando asi un espacion entre cada uno notable)
+						
+						space-around
+						(creara un margin normal y parejo entre cada linea de contenedor dando asi un espacio entre ellos)
+						
+
+
+	 

@@ -1,0 +1,410 @@
+GUIA DEL SUPERVILO PARA EL SUPERVILO<!---->
+
+DATOS DE UNA ESTRUCTURA
+
+../ 
+<!----ir atras en las carpetas-->
+
+carpeta/
+<!--ir adelante en la carpeta-->
+
+<p></p>  	//ETIQUETA// 
+<!----etiquita es aquella que se abre y se sierra que puede contener atributos y contenido -->
+
+<br>             //ELEMENTO//
+<!-----elemento es aquel que se cierra solo y cumple una funcion, puede tener atributos pero no contenido-->
+
+<img SRC="" HEIGTH="" VALUE="">   //ATRIBUTOS//
+<!----los atributos son aquellos que le dan una descripción a la etiqueta-->
+ 
+ETIQUETAS DE TEXTO
+
+<mark></mark>
+<!--esta etiqueta permite sombrear-->
+
+<hgroup>
+<!--se pueden agrupar los titulos y subtitulos de la paguina-->
+
+<blockquote></blockquote>
+<!--elementos cortos del aside-->
+
+<h1></h1>
+<!--los articulos de h1 daran el titulo de la paguina-->
+
+<p></p>
+<!--te permite escribir parrafos en la paguina web-->
+
+<br>
+<!--este elemento crea un salto de linea-->
+
+<hr/>
+<!--este elemento hace un salto de linea con una linea negra intermedia-->
+
+<b></b>
+<!--estilo BOLD que pone el texto en negritas //!!!!desuso-->
+
+<strong></strong>
+<!--HTML5 tambien pone negritas pero da más enfasis en el buscador-->
+
+<span></span>
+<!--es una etiqueta que no hace nada, pero que con css puedes cambiarle los estilos-->
+
+<em></em>
+<!--HTML5 enfasis, enfatiza el texto sustituyento la etiqueta <i></i> -->
+
+<i></i>
+<!--es una etiqueta que permite convertir el texto en italica //!!!!desuso-->
+
+<mark></mark>
+<!--HTML5 se utiliza para remarcar una accion, dependiendo de que haga el ususario-->
+
+<small></small>
+<!--HTML5 se utiliza enfatisar texto legal, colocado normalmente en el footer-->
+
+<address></address>
+<!--HTML5  para dar cualquier dirección, direccio, correo aplicando un blocklevel -->
+
+<time datetime="2018-06-12" pubtime></time>
+
+<cite></cite>
+<!--HTML5 que enfatisa, pero solo se debe usar para hacer referencia a una cita de un autor-->
+
+<blockquote></blockquote>
+<!--con estas etiquetas se agregan las citas en una paguina web en cite se agrega el autor y en blockquote argegas el parrafo-->
+
+
+
+ESTRUCTURA GENERAL DE UNA PAGUINA WEB
+<!doctype html>         
+<!-- //el tipo de elemento es de la versión de html5 -->
+
+    <html></html>
+    <!-- //sintaxis basica de HTML -->
+
+	    <head></head>                             
+        <!-- //cabeza -->
+        
+                            META DATOS
+							
+			<meta name="description" content="descrition de pagina parrafo">
+            <!-- //description de la paguina de palabras claves recomienda colocar menos de 150 caracteres, pero casi no se usa -->
+
+            <meta name="autor" content="descritionde pagina separadas por comas">
+            <!-- //description de la paguina y autor se recomienda colocar menos de 150 caracteres -->
+
+            <meta name="keyword" content="descrition de pagina separadas por comas">
+            <!-- //description de la paguina de palabras claves recomienda colocar menos de 150 caracteres, pero casi no se usa -->
+            
+            
+            <meta charset="utf-8">
+            <!--se pueda entender el lenguaje latino-->
+			
+			<meta name="viewport" content="width=device-width, user-escalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    
+
+                            ICONO
+                    
+	       <link rel="shortcut icon" type="image/x-icon" href="imagenes/icono.icon"> 
+            <!--permite enlazar un icono a la paguina web-->
+			
+			<link  href="icon-iphone.png" rel="apple-touch-icon-precomposed">
+			<link  href="icon-ipad.png" rel="apple-touch-icon-precomposed" size="72x72">
+			<link  href="icon-iphone-retina.png" rel="apple-touch-icon-precomposed" size="114x114">
+			<link  href="icon-ipad-retina.png" rel="apple-touch-icon-precomposed" size="114x114">
+			<!--permite enlazar un icono de iphone o ipad a la paguina web-->
+     
+                    STYLESHEET CSS
+                    
+            <style rel="stylesheet" href="archivo.css"></style>
+            <!--permite enlazar con una hoja de estilo en casacada tipo .css-->
+     
+                    CODIGO JAVA SCRIPT
+                    
+                <script href="archivo.js"></script>
+                <!--permite enlazar un archivo javascript-->
+
+
+	<body></body>
+    <!-- //cuerpo -->
+
+
+
+    <header></header>
+    <!-- //cabezera de el body en la cual normalmente se programa el nav -->
+
+        <nav></nav>
+        <!-- //navegación donde el usuario navega por la aplicaciones -->
+
+				<a></a>
+				<!-- //es un enlace que te manda 'a' otra dirección -->
+			
+					<a href="#" ></a>
+					<!-- //aqui va la direccion IP de el elemento paguina o cosa a donde nos va a mandar y el contenido es una referencia EJEMPLO: href="carpeta/imagen.jpg"//-->
+					
+					<!--target="_blank" 
+					<!--permite abrir un elemento en otra pestaña-->-->
+			
+					<!--href="mailto:gabriel.viloria0812@gmail.com"
+					<!--te permitira enviar un correo a esta persona-->-->
+			
+					<!--title=""
+					<!--permite ponerle un mensaje que saldra cuando sombrees la imagen-->-->
+ 
+    <section></section>
+    <!-- //cuerpo del cuerpo de el html -->
+    
+        class"wrapper" class="main"
+        <!--creas dos contenedores para que puedas organizar mejor el cuerpo WRAPPER contenedor X mientras que eñ MAIN sera el principal el cual estara al lado del SIDE-->
+        
+        <article></article>
+        <!-- //articulo que puedes agregar a el contenedor, la norma es que sea autonomo de si mismo y al copiarlo pegarlo mantenga su coerencia en donde sea-->
+
+        
+        
+    
+    <aside></aside>
+    <!-- //lado que no sera tomado en cuenta por el buscador-->
+
+    <footer></footer>
+    <!-- ///pie de pagina -->
+
+
+LISTAS
+
+    <ul></ul>
+    <!--crea un espacio en el cual podemos meter li listas-->
+    
+    <ol></ol>
+    
+        <li></li>
+        <!--es un elemento en la lista-->
+        
+TABLAS
+
+    <table></table>
+    <!--es una tabla donde se pueden colocar tr filas y td las columnas deseadas-->
+    
+    <tr></tr>
+    <!--es una fila en la tabla donde se pueden colocar muchas  td columnas-->
+    
+    <td></td>
+    <!-- es la columna de una fila -->
+    
+FORMULARIOS
+	<fieldset></fieldset>
+	<!--nos permite crear un cuadro que al combinarlo con un legend se puede utilizar para formularios-->
+	
+	<legend></legend>
+	<!--texto que dentro de un fieldset queda hermoso como contenedor de formularios-->
+
+    <form></form>
+    <!--nos permite crear un formulario de datos-->
+    
+        <label for=""></label>
+        <!--nos permite agregar una etiqueta lo interesante es que si le pones la ID de un campo de TEXT en FOR te permitira enlazarlo a el TEXT-->
+		
+		
+        <textarea for=""></textarea>
+        
+        <select name="" id=""></select>
+        <!--crea un cuadro con OPTIONs-->
+		
+				<option value="x">x</option>
+				<!--crea un opcion en el cuadro SELECT-->
+        
+        
+        
+        <input>
+         <!--permite crear un entrada-->
+         
+           TIPOS DE INPUTS
+           type="text" 
+            <!--permite crear un entrada para ingresar texto-->
+			
+					placeholder="nombre"
+					<!--permite q el cuadro de texto tenga un texto de descripcion transparente-->
+					
+					maxlength="2"
+					<!--permite administrar la cantidad de caracteres que puede introducir el usuario-->
+					
+					name="nombre"
+					<!--ayuda al buscador-->
+					
+					id="X"
+					<!--es la id que identifica la etiqueta ademas es la que sele pega al FOR de LABEL-->
+					
+					autofocus=""
+					<!--pondra el foco aqui al abrir la paguina-->
+					
+					required=""
+					<!--al enviar los datos este campo dira que necesita llenarse-->
+					
+					pattern="[z-aA-z(barra invertida)s]{5,}"
+					<!--necesitaras cumplir estas condiciones para poder enviar este dato-->
+			
+			type="number"
+            <!--permite agrerar un formato tipo numerico-->
+			
+					min=""
+					 <!--permite limitar la cantidad minima de numeros-->
+					 
+					 max=""
+					 <!--permite limitar la cantidad maxima de numeros-->
+					 
+			type="date"
+            <!--permite agrerar un formato tipo fecha-->
+			
+					min=""
+					 <!--permite limitarla la fecha minima (año-mes-dia)-->
+					 
+					 max=""
+					 <!--permite limitarla la fecha minima (año-mes-dia)--> 
+					 
+			type="tel"
+            <!--permite agrerar un formato tipo telefono-->
+			
+		    type="email"
+            <!--permite agrerar un email-->
+             
+            type="password" 
+            <!--crea una entrada donde se colocaran solo caracteres para contraseña-->
+            
+            type="checkbox"
+            <!--crea muchos cuadros que puedes eleguir todos-->
+            
+            type="radio"
+            <!--crea un button circular que puedes selecionar uno a la vez-->
+			
+			list"(id de el datalist)"
+			
+						<datalist id=""></datalist>
+						<!--crea un listado -->
+								
+											id=""
+											<!--crea un id especial para conectar con el list de el input -->
+						
+						<option></option>
+						<!--crea una opcion de ayuda para el usuario-->
+						
+											value=""
+											<!--crea un valor que se le pasara al php-->
+
+			
+			 type="button" 
+            <!--crea un BUTTON en blanco-->
+			
+                value="boton"
+                <!--crea un mensaje dentro del boton-->
+                
+                onclick="function();"
+                <!--permite ejecutar una funcion de JS cuando le den click-->
+            
+            type="submit"
+            <!--este es para enviar los datos-->
+			
+			 type="color"
+            <!--crea un cuadro con la paleta de colores de HTML CSS-->
+            
+            type="range"
+            <!--crea una barra de rango-->
+            
+IMAGENES-AUDIO-VIDEO-DIBUJO
+
+		<audio src=""></audio>
+        <!--crea una archivo que sirve para poner audios-->
+		
+						//ATRIBUTOS//
+						controls
+						<!--este atributo te da el control sobre los video-->
+						
+						width="650px"
+						<!--este atributo te permite alterar el tamaño de los video-->
+						
+						//ETIQUETAS//
+						<source></source>
+						<!--esta etiqueta permite dar la direccion o fuente del video-->
+						
+									//atributos del <source></source>//
+									src="audio.mp3"
+									<!--permite colocar la ruta de el archivo-->
+									
+									type="audio/mp3"
+									<!--permite colocar la ruta de el archivo-->
+						
+						
+		
+		
+		<video></video>
+        <!--crea una caja que sirve para poner videos, para hacerle modificiaciones se utilizaria java script-->
+		
+						//ATRIBUTOS//
+						controls
+						<!--este atributo te da el control sobre los video-->
+						
+						width="650px"
+						<!--este atributo te permite alterar el tamaño de los video-->
+						
+						//ETIQUETAS//
+						<source></source>
+						<!--esta etiqueta permite dar la direccion o fuente del video-->
+						
+									//atributos del <source></source>//
+									src="video.mp4"
+									<!--permite colocar la ruta de el archivo-->
+									
+									type="video/mp4"
+									<!--permite colocar la ruta de el archivo-->
+									
+//EJEMPLOS//
+<source src="video.ogg" type="video/ogg">
+<!--para videos de formato .ogg -->
+						
+<source src="video.mp4" type="video/mp4">
+<!--para videos de formato .mp4 -->
+						
+<embed src="video.swf" type="application/x-shockwave-flash" width="650" height="350" allowfullscreen="true">
+<!--si el ordenador no tiene html5 se tendra que usar este metodo -->
+ 
+ 
+						
+
+		
+		<canvas></canvas>
+		<!--crea una caja que sirve para dibujar-->
+
+		
+		
+
+        <div></div>
+         <!--crea una caja que sirve para poner imagenes-->
+		 
+		<figure></figure>
+		<!--permite crear una caja que contenga img-audio-video-->
+			
+		   	 <figcaption></figcaption>
+			 <!--permite crear una descripcion de la caja img-->
+         
+					<img crs="#"> 
+					<!--etiqueta que permite cargar una imagen-->
+             
+							width="" 
+							<!--permite medir el ancho-->
+             
+							heigth=""
+							<!--permite medir el alto-->
+             
+							alt=""
+							<!--permite agregar un texto que sirva para mostrar un texto cuando no se encuentre la imagen-->
+             
+							title="" 
+							<!--permite crear un texto que siempre se agregara cuando el cursor este sobre la imagen-->
+
+         
+            
+                
+
+
+    
+    
+    
+    

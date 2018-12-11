@@ -1,0 +1,50 @@
+android
+<i class="fab fa-android"></i>
+
+apple
+<i class="fab fa-apple"></i>
+
+amazon
+<i class="fab fa-amazon"></i>
+
+balansa
+<i class="fas fa-balance-scale"></i>
+
+campana
+<i class="fas fa-bell"></i>
+
+campana
+<i class="far fa-bell"></i>
+.
+bluethoio
+<i class="fab fa-bluetooth"></i>
+
+open-box
+<i class="fas fa-box-open"></i>
+
+facebook
+<i class="fab fa-facebook-square"></i>
+
+sonrisa-smile
+<i class="fas fa-smile"></i>
+
+twitter
+<i class="fab fa-twitter"></i>
+
+home
+<i class="fas fa-home"></i>
+
+letra Q
+<i class="fab fa-quora" aria-hidden="true"></i>
+
+duchita-bath
+<i class="fa fa-bath" aria-hidden="true"></i>
+
+usuario-user
+<i class="fa fa-user" aria-hidden="true"></i>
+
+comentario
+<i class="fa fa-comment" aria-hidden="true"></i>
+
+carta
+<i class="fa fa-envelope" aria-hidden="true"></i>

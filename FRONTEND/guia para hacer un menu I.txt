@@ -1,0 +1,54 @@
+--------------CREANDO MENUS----------------
+*{
+font-family:'Arial';
+(puede eleguirse otro tipo de funente a la paguina su objetivo es solo por el diseño)
+
+    font-weight:bold;
+	(cambia la fuente a negritas, de nuevo solo diseño)
+	
+    margin: 0px;
+	(quitarle los margenes por defecto para que el menu quede cubriendo toda la pantalla)
+
+	}
+	
+nav{
+background-color:chocolate;
+(se le coloca un fondo bien bonito)
+
+text-aling:center;
+(la ul se ordenara al centro, para que sea un nav horizontal)
+
+height:50px;
+(hay que darle un alto a este menu)
+
+
+	
+nav ul li{
+
+display:inline;
+(recuerdas que los elementos li estan siempre de arriba a abajo pues ya no ahora estara horizontales en linea cada uno)
+
+margin:6px -3px;
+(este se usa para ir cuadrando que los botones queden juntitos)
+
+		}
+
+	
+nav ul li a {
+text-decoration:none;
+(ayuda para quitar el subrayado)
+
+margin-right:10px;
+(separamos  hacia la derecha para que se vea bien)
+
+font-size:20px;
+(aumentamos el tamaño de la fuente ya que normalmente los menus tienen la letra grande)
+
+padding:10px 10px;
+(de esta manera eleguimos el tamaño del boton)
+
+/*border:1px solid black
+(lo suelo utilizar para ayudarme a agrupar los botones junto con el margin);*/
+
+	}
+

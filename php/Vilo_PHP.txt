@@ -1,0 +1,449 @@
+<?php?> etiqueta PHP
+<?php include '/*nombre del archivo php*/'; ?>
+//     comentario de una linea
+/**/ comentario de dos lineas
+-> concadenacion de objeto
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////OPERADORES LOGICOS//////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// > -mayor que          >>>>>>>>>>>>
+// < -menor que          <<<<<<<<<<<<
+// >= -mayor o igual que >=>=>=>=>=>=
+// <= -menor o igual que <=<=<=<=<=<=
+// == -igual que         ============
+// === -igual cantidad, igual información y igual tipo de dato								============
+// != -NO igual ques       !=!=!=!=!=!=
+// && - y, además    &&&&&&&&&&&&&&&&
+// || -or,o          ||||||||||||||||
+//++   suma uno a una variable
+// --    resta uno a una variable
+
+<=>  menor,igual y mayor que 
+/*
+retorna -1 si es menor
+retorna 0 si es igual
+retorna 1 si es mayor
+*/
+/////////////////////////////////////////OPERADORES ARITMETICOS//////////////////////////////////////////////////
+division= /
+multiplicacion *
+suma= +
+resta= -
+modulo= % //lo que sobra de una divición EJEM 23 % 2 = 1
+/////////////////////////////////////////OPERADORES de asignación//////////////////////////////////////
+=  sera exactamente igual al valor que se le va a asignar
++=  sera el valor de la variable inicializada más un nuevo valor
+-= sera el valor de la variable inicializada menos un nuevo valor
+*=sera el valor de la variable inicializada multiplicado por un nuevo valor
+/=sera el valor de la variable inicializada dividido por un nuevo valor
+%=sera el valor del resto de la variable inicializada por un nuevo valor
+
+/////////////////////////////////////////OPERADOR DE CONDICION//////////////////////////////////////
+
+condicion ? valor_si_true : valor_si_false
+
+permite ejecutar una condicional simple de dos opciones
+/////////////////////////////////////////OPERADOR COALICENTE NULL//////////////////////////////////////
+
+$_GET["VARIABLE"] ?? "esta variale no ha sido declarada"; 
+
+permite verificar si la variable esta "null, vacia" y los ?? permiten llenarla con un valor si de verdad estaba vacia
+////////////////////////////////////////////////cademas///////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+echo "/* string o variable o operación o todo junto*/  .  /*otro conjunto*/" ;
+/*echo permite imprimir un valor string por pantalla, los (.) se utilizan para concatenar*/
+/*
+\n  permite hacer una nueva linea
+\r  permite hacer retorno de carro
+\t  permite hacer una tabulación
+\'  permite hacer una comilla
+\$ permite mostrar el signo $
+
+strlen($string); 
+/*permite devolver la cantidad de elementos que tiene un string, lo devuelve como entero*/
+
+strpos($string,$llave);
+/*permite buscar una palabra clave dentro de una cadena de caracteres*/
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////tipos de datos///////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+substr($string , $numero_posicion , $numero_cantidad_caracteres);
+/*permite sacar una cadena string de un lugar especifico*/
+
+$/*nombre variable*/ = /*valor de la variable*/ ;
+//la variable declarada tendrá un el valor que quiera y php sabrá que tipo es por ejemplo
+
+$integer= 3;
+$doubles=9.87;
+$booleanos=true or false;
+$arrays=array("jose","pedro","carlos");
+$array_asociativo = array ("nombre" =>"jose", "pasatiempo" => "programar");
+$object= new object ();
+$resources = new mysqli ("localhost","root","123456","bd");
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////constantes///////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+const /*nombre de la variable*/  = /*valor de la variable*/ ;
+/*una constante tendrá el mismo valor a lo largo del programa y jamas podrá cambiarse*/
+
+ $action=$_GET['ac'];
+    $formulario=$_GET['for'];
+/*y de esta manera se saca la informacion en en el enlace que mandaste*/
+
+EJEMPLO QUE QUIERAS MANDAR DE NUEVO LA INFORMACION DE AC OTRA VEZ A OTRA PAGINA
+echo "<a class='administrador' href='formularios.php?for=1&&ac=".$action."'>administrador</a>";
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////ARRAY//////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$arrayName = array('' => , ); 
+
+ /*una variable contendra un arreglo en el cual tendra un indice (seria el primer valor que introduces en los parectisis y el segundo valor sera el valor que estara ligado a ese indice en el arreglo, de dejarlo sin nada el arreglo empezara a contar desde cero)*/
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////enlaces///////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+<a href="XXX.php?ac=1&&for=2"></a>
+
+/*en php puedes mandar una informacion por el metodo get "?" la cual madara variable a donde tu quieras y las podras sacar en otras paguinas*/
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////formulario///////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+el html tendrá los formularios programados para mandar la información en el caso respectivo al método que se este utilizando por ejemplo
+
+<form method="/*get or post*/" action="/*dirección de la pagina donde se manda los formularios*/">
+<?php $nombre=$_GET['/*NAME DE EL INPUT QUE TIENE LA INFORMACION*/']; ?>
+/*y de esta manera se pasa un elemento a un archivo php*/
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////condicionales///////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+if (/*condicion*/){
+/*tarea*/
+}else/*de otro modo*/{
+/*tarea opción 2*/
+}
+
+/*los condicionales de utilizan para hace múltiples selecciones de tareas dependiendo de las condiciones*/
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////Bucles FOR, WHILE///////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////FOR////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+for(/* SE DECLARA LA VARIABLE EJ: $i=1*/ ;/*SE DECLARA LA CONDICIÓN PARA QUE ACTIVE EL BUCLE EJ $i<=10*/;/* SE DECLARA UN AUMENTO DE LA VARIABLE PARA QUE EL BUCLE ENCUENTRE UNA SALIDA $i++*/){
+
+		/*TAREA*/
+	}
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////WHILE////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$i=0; /*SE DECLARA LA VARIABLE*/
+while(/* SE DECLARA LA CONDICIÓN EJ $i<10*/){
+	
+	/* SE DECLARA UNA TAREA EJ echo $i."<br>";*/
+ 	
+	/* Y SE DECLARA AUMENTO EN LA VARIABLE INCREMENTO $i++;*/
+	
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////SWITCH////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+$pais = "v"; /*SE DECLARA UNA VARIABLE CON UN VALOR*/
+	switch ($pais) { /*SE INVOCA AL SWITCH CON EL NOMBRE DE DICHA VARIABLE*/
+	
+	 	case 'v':      { /*SE ANALIZARA EL CONTENIDO DE LA VARIABLE Y SI ES EL MISMO SE EJECUTARA LA TAREA*/
+	 		echo "su país de origen es venezuela"; /*TAREA*/
+	 		break;/*SALE DEL SWITCH*/
+			
+			default:""; /*CASO POR DEFECTO POR SI NO LLEGA A ENCONTRAR NADA*/
+	 		echo "su país no se encontro"; /*TAREA*/
+	 		break; *SALE DEL SWITCH*/
+			////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////FOREACH////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+							foreach($array as $valor)
+/*un array se metera en un valor y el foreach se encargara de dividir esos valores y los coloca en una variable que podras usar en un ciclo*/
+{
+/*trabajas las variable como quieres*/	
+}
+				foreach($array as $llave as $valor)
+/*tomara un array y almacenara los valores de el indice de la posicion y el valor de que conyeba ese indice, se acumularan en variables de un ciclo donde las podras usar*/
+{
+/*trabajas todas las variable como quieres*/	
+}
+
+			////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////FUNCIONES/////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+function 	NOMBRE ( $VARIABLE , $VARIABLE...){
+/*ACCION DE LA FUNCION*/
+return /*VALOR QUE DEVUELVE ESTA FUNCION*/;
+}
+
+/*las funciones se utilizan para realizar tareas con datos que puede pedir o hasta sin ellos y devolver valores asi como ejecutar acciones por si mismas */
+
+
+///////////////////////////////////////////////tipo escalar///////////////////////////////////////////////////////
+declare(strict_types=1);
+/*permite que las funciones solo se ejecuten con los parametros que piden*/
+
+function 	NOMBRE ( TIPO_DATO $VARIABLE , TIPO_DATO  $VARIABLE...){
+/*ACCION DE LA FUNCION*/
+return /*VALOR QUE DEVUELVE ESTA FUNCION*/;
+}
+///////////////////////////////////////////////tipo retorno///////////////////////////////////////////////////////
+function 	NOMBRE ( TIPO_DATO $VARIABLE , TIPO_DATO  $VARIABLE...) : TIPO_VARIABLE
+{
+/*ACCION DE LA FUNCION*/
+return /*VALOR QUE DEVUELVE ESTA FUNCION*/;
+}
+
+/*este metodo de funcion es la más completa ya que restringe el tipo de dato que entra y que sale*/
+			////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////funciones de PHP/////////////////////////////////////////////////////////////
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+php include 'nombre_archivo php*/'; 
+/*esta sentencia permite agregar archivos externos de todo tipo al documento;*/
+
+php date 'd-m-y'; 
+/*esta funcion permite sacar la fecha actual del navegador */
+
+email(/*email*, /*asunto*/,/mensaje*//); 
+/*permite enviar un mensaje al correo de la persona, con asunto y todo*/
+
+phpinfo();
+/*permite saber la version de él PHP*/
+
+print_r  $variable ;
+/*te permite imprimir arreglos  con sus respectivos indices ¡super util!*/
+
+define("CONSTANTE", array($valor_0 , $valor_1));
+/*permite hacer un arreglo con un conjuto de valores que le pases por el metodo, pero solo se podran llamar con el nombre de la contante*/
+
+array($valor_0 , $valor_1);
+/*permite hacer un arreglo con un conjuto de valores que le pases por el metodo*/
+				
+				count();
+				/*permite saber el tamaño de una variable que contiene un arreglo contando desde uno*/
+				
+issset( $variable);
+/*evaluara una variable definida y si esta ha sido declarada devolvera un true si la variable nunca se ha declarado devolvera un false*/
+
+date( 'd-m-y' );
+/*permite saber la fecha en la cual estamos, php la saca de la pc*/
+
+call( new OBJETO )
+/* ver tutorial capitulo 29*/
+
+IntlChar::charName('CARACTER_ESPECIAL');
+/*te permitira saber el nombre del caracter especial*/
+IntlChar::ispunct('SIGNO_PUNTUACION');
+/*te permitira saber si el sigon es uno de puntuacion o no*/
+
+bin2hex(codigo_binario);
+/*permite hacer el cambio de binario a hexadecimal*/
+
+random_bytes( LONGITUD_CARACTERES);
+/*te creara al azar una loguitud determinada de caracteres, solo que los devolvera en binario, asi que tendras que hacer la conversion a hexadecimal*/
+
+random_bytes( NUMERO_DESDE , NUMERO_HASTA );
+/*te creara al azar un numero que entre los parametros NUMERO_DESDE  Y NUMERO_HASTA */
+
+intdiv(DIVIDENDO, DIVISOR);
+/*te permite hacer una divición y devolvera un valor entero*/
+
+intval(VARIABLE);
+/*permite hacer un redondo de una variable dooble*/
+
+floor(VARIABLE);
+/*permite hacer un redondo de una variable dooble al numero proximo menor*/
+
+floor(VARIABLE);
+/*permite hacer un redondo de una variable dooble al numero proximo mayor*/
+
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////POO PHP/////////////////////////////////////////////////////////////
+		///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		
+/////////////////////////////////CLASES (molde para realizar un objeto)/////////////////////
+class /*nombre de la clase*/{
+/*las clases seran los moldes donde programaremos nuestros objetos*/
+}
+/////////////////////////////////contructor()/////////////////////
+function __construct()/*así se asigna un constructor*/ (){
+$this->nombre/*nombre de las variables*/="/*se deja en blanco ya que es un constructor*/";
+}
+
+/////////////////////////////////encapsulamiento(get and set)/////////////////////
+//////////////////////////////////////////////setter/////////////////////
+function /*nombre del setter normalmente hacemos esto EJ setVariable*/( P /*parametro*/){
+$this->nombre/*nombre de la variable */ = P;
+}
+
+//////////////////////////////////////////////getter/////////////////////
+ function /*nombre del getter normalmente hacemos esto EJ getVariable*/(){
+return $this->nombre/*nombre de la variable*/;
+}
+/////////////////////////////////////////OBJETO  (variable que puede accerder a todas las funciones de una clase que ya ha sido programada)/////////////////////
+
+$variable= new objeto();
+/*se crea la variable que como un objeto osea que puede acceder a todas las funciones de esta clase utilizando una concadenacion "->"*/
+			////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////BASE DE DATOS/////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////CONECCION A LA BASE DE DATOS/////////////////////
+$connect = mysqli_connect("/*host en este caso localhost*/","/*usuario en este caso gabriel*/","/*contraseña en este caso vasia*/","/*nombre de la base de datos en este caso p1*/");
+
+/*se crea una variable con el valor de la connexion a la base de datos en la cual se le pasan los valores del host,usuario,contraseña y base de datos*/
+
+/////////////////////////////////////////CONSULTA A LA BASE DE DATOS/////////////////////
+$registro= mysqli_query (/*nombre de la variable en este caso $connect*/, "/*haces tu consulta que en este caso es 'select * from noticias'*/");
+
+/*se crea una variable con el valor de el registro , en la cual se le pasaran los valores de la variable de conexion en este caso $connect*/ y el valor de la consulta en este caso "select * from noticias", con esto especificamos cuales valores hay que seleccionar y de que tabla*/
+
+
+/////////////////////////////////////////VISUALIZAR LA BASE DE DATOS/////////////////////
+$consulta= myqli_query ($conexion, /*variable de registro en este caso "select from '/*nombre de la tabla*/' where id = $id "*/)
+$reg = mysqli_fetch_array($consulta)
+$reg['/*nombre de la columna */'];
+
+// de esta manera se convierte una consulta a base de datos en un array y se puede manipular como tal
+
+/////////////////////////////////////////VISUALIZAR LA BASE DE DATOS/////////////////////
+
+while($reg=mysqli_fetch_array(/*variable de registro en este caso $registro*/)){
+
+			echo $reg['/*nombre de la columna */']
+}
+/*ciclo el cual nos permite convertir el registro en un array*/
+
+/////////////////////////////////////////INSERTAR EN LA BASE DE DATOS/////////////////////
+
+$consult = "INSERT INTO '/*NOMBRE DE LA TABLA*/' VALUES ([value-1],[value-2],[value-3],[value-4])";
+mysqli_query($connect, $consult)
+
+/*aqui el query se encarga de hacer una consulta de insertacion de la base de datos y insertar los valores */
+
+/////////////////////////////////////////ACTUALIZAR EN LA BASE DE DATOS/////////////////////
+$consult= "UPDATE FROM '/*nombre de la tabla*/'  SET /*LOS VALORES A ACTUALIZAR EN ESTE CASO `titulo`='$titulo',`fecha`='$fecha',`noticia`='$noticia'   */   where id = $id ";
+
+mysqli_query($connect, $consult);
+
+/*aqui el query se encarga de actualizar la base de datos*/
+
+/////////////////////////////////////////ELIMINAR DE LA BASE DE DATOS/////////////////////
+$consult = "delete from '/*nombre de la tabla*/' where id = $id "
+
+mysqli_query($connect, $consult);
+
+/*aqui el query se encarga de eliminar de la base de datos*
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////VISUALIZAR LA BASE DE DATOS///////////////////
+////////////////////////////////////////RELACIONAL///////////////////////////////////////////
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////INGRESAR DATOS A LA BASE DE DATOS///////////////////
+////////////////////////////////////////RELACIONAL///////////////////////////////////////////
+
+/*PARA INGRESAR DATOS EN DOS TABLAS NECESITAS HACER UNA CONSULTA EN LA TABLA PRINCIPAL DONDE PRIMERO INFORMACION EN LA PRIMERA TABLA, SUBSTRAER DE ESA TABLA EL DATO DE LA PRIMARY KEY Y LUEGO HACER  OTRA CONSULTA DONDE UTILIZARAS ESA MISMA VARIABLE PARA HACER LA SEGUNDA CONSULTA Y TE QUEDE TODO ENLAZADO*/
+
+$connect = mysqli_connect('localhost', 'gabriel','','maraton_2');
+    mysqli_query($connect, "INSERT INTO `user`(`id`, `keyword`, `type`, `name_user`) VALUES (null,'$clave','$tipo','$nombre_usuario')");
+	
+	
+	/*HACEMOS LA PRIMERA CONSULTA*/
+
+    $registro=mysqli_query($connect, "SELECT * FROM user where user.keyword='$clave'");
+    $reg=mysqli_fetch_array($registro);
+    $id=$reg['id'];
+    echo $id;
+
+	/*RESCATAMOS EL DATO QUE NOS GENERO LA PRIMARY KEY Y LO GUARDAMOS EN UNA VARIABLE*/
+	
+   mysqli_query($connect,"INSERT INTO `persons` (`id_person`, `first_name`, `last_name`, `gender`, `email`, `user_id`) VALUES (NULL, '$nombre', '$apellido', '$tipo', '$email', '$id')");
+   
+   /*UTILIZAMOS ESA VARIABLE PARA ENLAZAR LAS BASES DE DATOS*/
+   
+		////////////////////////////////////////////////////////////FUNCIONES PHP SQL/////////////////////////////////////////////////////////////
+		mysqli_num_rows($Consult);
+		//permite convertir todas la consulta en numeros
+   
+   
+   /////////////////////////////////////PDO MYSQL///////////////////////////////////////////////
+   //es una capa de abstraccion en la cual podemos obtener podemos conectar con muchas fuentes bd de distintas fuentes
+   ///////////////////////////////CREAR LA CONEXION/////////////
+   $variable_pdo = new PDO('mysql:host=localhost; dbname=NOMBRE_BD','root','' );
+   //creamos una variable y la instaciamos y el constructor nos pide el tipo de pdo (en este casi mysql:host:localhost y el nombre de la base de datos a utilizar (en este caso NOMBRE_BD) y cerramos las primeras comillas, colocar el nombre de usuario entre comillas (en este caso root) y la contraseña (en este caso '' {osea vacia[))
+   
+   /////////////////////////CAPTURAMOS LA EXCEPCION////////
+   //la excepcion es un problema que tiene que ver con la bd no con la sintaxis de php, es importante agarrarla para poder manipular el error y asi arreglar posibles fallos
+
+	   try{
+	$variable_pdo = new PDO('mysql:host=localhost; dbname=practica_7_crud','Vilo','vilo0812');
+	echo 'Conexion it\'s ok ';
+	}catch(exception $e){
+		die('Error:' . $e->GetMessage());
+	}finally{
+		$variable_pdo=null;
+	}
+	
+	//adentro de catch se podra manejar la exception como la variable '$e' y se evalue con la funcion die para determinar cual es el error y finally se ejecutara de todos modos
+    ////////////////////////////////Consultas PDO//////////////////////////
+	1----primero en PDO tenemos que crear la consulta y almacenarla por medio de una variable '$sql'
+    2----segun en PDO tene	mos que llamar a la funcion prepare que nos devolvera un objeto PDOStatement que se almacenara en otra variable 
+	3---- ahora con nuestro objeto PDOStatement debemos ejecutarlo
+	4---- finalmente debemos recorrer el PDOStatement con la funcion fetch 
+	////////////////////////////////////////paso 1//////////////////////////////////////////
+	$VARIABLE_SQL="SELECT `id_new`, `title`, `date`, `new` FROM `news` WHERE ?";
+	//esta es una consulta de ejemplo y se almacena en una variable, importante recordar que el '?' representa una variable que puede ser rellenada cuando se ejecuta el PDOStatement
+	////////////////////////////////////	
+	///////////////////////paso 2/////////////////////////////////////
+	 $Variable_PDOstatement=$VARIABLE_PDO->prepare($VARIABLE_SQL)
+	 //la funcion prepare permite crear un pdostatement el cual podemos almacenar en una variable y asi tendra acceso a los metodos del objeto PDOstatement en una variable la cual funcionara como contenedor de todas las consultas
+	 ////////////////////////paso 3 array normal//////////////////////////////////
+	 $Variable_PDOstatement->execute(array("variable"));
+	 //de esta manera podemos rellenar las variables de las consultas que ya habiamos utilizado y dejamos en un '?'
+	 
+	 ////////////////////paso 3 array asociativo////////////////////////////////////////
+	 $variable_PDOStatement=$variable_pdo->prepare("SELECT `id_new`, `title`, `date`, `new` FROM `news` WHERE :NOMBRE_DESEADO");
+	 //la variable ahora es un ':' segido de el nombre deseado
+	 
+	 $variable_PDOStatement->execute(array("n_variable"=>1));
+	  //de esta manera podemos rellenar las variables de las consultas que teniamos en :NOMBRE_DESEADO y llenamos con algun valor
+	 /////////////////////paso 4  MOSTRAMOS/////////////////////////////////////
+	
+	 ///utilizamos el metodo fetch(PDO::FETCH_ASSOC para crear un ciclo while que no se detendra hasta recorrerlo todo y a su vez lo 
+	//V// lo guardamos en una variable para poder ir mostrandolo poco a poco
+	 while($resultado=$variable_PDOStatement->fetch(PDO::FETCH_ASSOC)){
+		//V// aqui aprobechamos el bucle para mostrar la imformacion que necesitamos, en este caso lo encerre en un cuadro muy mono
+		echo $resultado['title'] ;
+	}
+	 
+	 ////////////////////////////////////////////////////////////INSERTAR INFORMACION EN LA BASE DE DATOS//////////////////////
+		$sql="INSERT INTO news ('id_new','title','date','new') VALUES ( null, :n_title, :n_date, :n_new)";
+		//hacemos una variable en la cual tendra la consulta
+		
+		$variable_PDOStatement=$variable_pdo->prepare($sql);
+		//V/creamos el PDOStatement para trabajarlo
+		
+		$variable_PDOStatement->execute(array("n_title"=>$title,"n_time"=>$time,"n_date"=>$fecha, "n_new"=>$noticia));
+	    //V/ ejecutamos el PDOStatement
+		
+	////////////////////////////////FUNCIONES PDO//////////////////////////
+	 $VARIABLE_PDO->exec("SET CHARACTER utf8");
+	 //permite cambiar la combinacion de caracteres al utf8 de manera que leera los acentos la ñ y esas cosas
+	 
+
+
+

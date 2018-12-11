@@ -1,0 +1,403 @@
+blender curso
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////ELEMENTOS BASICOS 1/////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//////////////cursos//////////////////////
+CLICK IZQUIERDO
+//permite colocar el cursos donde quieras
+
+SHIF + I
+//invierte la seleccion
+
+SHIF + C
+//coloca el cursor en el medio del universo
+
+CONTROL + SHIF + ALT + C
+//despliega un menu el cual te permite mover el cursor o la pivote a donde tu quieras
+
+
+//////////////correccion//////////////////
+control + z 
+///permite regresar la accion que has hecho
+
+////////////espaneo/////////////////////////////
+shif + scroll
+//permite visualizar vertical
+
+CONTROL + SCROLL
+//permite visualizar horizontal
+
+///////////////////movimiento//////////////////////////
+
+click derecho
+//permite mover un objeto en las direcciones que quieras
+
+//////////////////vista////////////////////
+scroll + or ~
+//permite hacer un zoom o disminuirlo
+
+presionar scroll
+//permite mover la vista en la direccion que quieras
+
+control + scroll
+//paneo horizontal
+
+sift + scroll
+//paneo vertical
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////ELEMENTOS BASICOS/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+///////////////////AGREGAR///////////////////////////////////////////////////////////////////////////////////////
+shif + A
+//muestra un menu de opciones donde puedes seleccionar diferentes objetos prefrabicadosx para agregaar al proyecto
+
+//////////////////duplicar////////////////////////////////////////////////////////////////////////////////////////
+shift + D
+//permite duplicar un objeto cuantas veces quieras
+
+//////////////////Selectores///////////////////////////////////////////////////////////////////////////////////
+shift + click derecho
+//permite seleccionar varios objetos de una misma vistas
+
+A
+//permite seleccionar todos los elementos de la vista
+
+B
+//permite hacer una captura y seleccionar los objetos que quieras
+
+c
+//permite crear un pincel que selecciona a muchos objetos a la vez
+
+"select/select parther"
+//permite escribir el nombre del objeto y así hacer una busquedas
+
+
+////////////////rotacion//////////////////////////////////////////////////////////////////////////////////////
+R
+///permite rotar el objeto como lo desees
+
+		click izquierdo
+		//es importante soltarlo con click izquierdo para que quede la rotacion
+///////////////////escalar/////////////////////////////////////////////////////////////////////////////////////
+s
+//permite aumentar el tamaño de un objeto con solo moverlo
+
+		click izquierdo
+		//es importante soltarlo con click izquierdo para que quede la rotacion
+		
+N
+//muestra el menu de transformacion
+///////////////////Movilizar/////////////////////////////////////////////////////////////////////////////////////
+g
+//permite mover un objeto deseado
+
+		z
+		//permite hacer una restriccion y solo mover el objeto en el rango de las zetas
+		x
+		//permite hacer una restriccion y solo mover el objeto en el rango de las exis
+		y
+		//permite hacer una restriccion y solo mover el objeto en el rango de las yes
+		
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////TAP DISEÑAR/////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+TAP
+//muestra las herramientas para modificar un objeto por completo
+
+		CONTROL + TAP
+		//muestra un menu con opciones para seleccionar cual de los elementos quieres utilizar
+
+		A
+		//permite seleccionar todos los elementos del objeto o deseleccionar
+
+		S
+		//permite aumentar el tamaño de un elemento
+		
+		X
+		//te despliega un menu donde puedes eliminar algun detalle del objeto
+
+		K
+		//saldra un cuchillo que permitira cortar los objetos
+		
+			ENTER
+			//PARA QUE SE GUARDE TU NUEVA LINEA
+
+		control + R
+		//permite hacer cortes grandes de una linea en un objeto
+		
+		CONTROL + E 
+		//despliega un menu de opciones de faces
+		
+			marck sharp
+			//permite quitar el smoth a esas caras
+		
+		W
+		//despliega un cuadro con opciones de subdividir
+		----subdivicion
+		//permite dividir unos edges en mas edges de manera triangulada y hermosa
+		
+/////Face selecctor///////////////////////////////////////////////
+		//es un boton que te permitira modificar cada cara de un objeto
+		
+		
+		
+		E
+		//extraer una cara de su lugar creando una extension de esa cara
+		
+/////edge selector////////////////////////////////////////////////
+		//es un boton que te permite modificar cada borde del objeto
+		
+		ALT + CLICK DERECHO
+		//permite seleccionar todo un conjunto de lineas de un objeto
+		
+		F
+		//permite llenar un espacio
+		
+/////vertex selector//////////////////////////////////////////////
+		//es un boton que te permite modificar cada vertice del objeto
+		
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////MODIFICADORES///////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+///////DEFORM/////////////////////////////////////////////////
+
+		simple deform
+		//permite darle unos grados de torcedura para hacer girar los objetos
+		
+///////ARRAY//////////////////////////////////////////////////////
+
+		Array/fixed count/relative offset and constant offset
+		//permite crear duplicados del objeto, ideal para hacer escaleras
+		
+		arrau/fit length
+		//permite colocar una distancia la cual sera llenada con un monton de elementos similares por do quier
+		
+//////bevel///////////////////////////////////////////////////////////
+
+		bevel/width
+		//permite extender la distancia del borde
+		
+		bevel/segments
+		//permite aumentar aristas para que quede con un mejor acabado
+		
+		bevel/profile
+		//permite definir si el acabado va hacia adentro o hacia afuera
+		
+//////boolean///////////////////////////////////////////////////////////
+//permite anexar dos objetos a una misma operacion, trabajando siempre de padres a hijos
+
+		union
+		//permite la union de dos elementos convertidos en uno solo
+		
+		intersection
+		//permite crear una señalacion donde antes se encontraba el objeto
+		
+		diference
+		//permite hacer un corte en donde se conecten los dos objetos
+		
+/////mirrow//////////////////////////////////////////////////////////
+//nada más apretarlo te permite crear una copia de el elemento que ya tenias-si no agarra cambia el punto de pivote--
+
+		----merge
+		//permite la soldadura de las mitades
+		
+		----clipping
+		//corta desde las soldaduras osea que si la caja se mueve se va a cortar en vez de atravezar la caja mirrow 
+
+/////subdivicion subface////////////////////////////////////////////////
+//permite divirir el objeto en muchas aristass
+		
+/////Mask///////////////////////////////////////////////////////////
+//anten tendras que agrupar un conjunto de veritces y luego podras llamarlos aqui para poder enmascararlos, y enmascarar solo en hacer ver las faces o hacerlas desaparecer...
+
+/////multiresolution///////////////////////////////////////////////////
+//va de la mano con sculp mode que te ayuda a subvidir una imagen y a irle agregando cosas
+
+
+		simple
+		//da opciones de subvidiciones
+		
+			----subdivide
+			//permite dividir la cantidad de mayas que tiene un objeto
+			
+			----delete higher
+			//permite crear un limite en las opciones del catmull-clark
+			
+			----reshape
+			//no se tienen datos
+			
+		catmull-clark
+		//afecta directamente a las opciones de el scult mode
+		
+			preview
+			//permitira que se puedan guardar los cambios en las otras vistas
+			
+			sculpt
+			//mostrara uno por cada vez que apretes subdividir y se puede modificiar
+			
+			render
+			//tiene algo que ver con una fución
+			
+///////////////////screw/////////////////////////////////////////
+//permite darle forma de tormillo a una imagen 
+
+		---axis
+		//permite selecionar un eje en el cual un tornillo puede girar
+		
+		---axis O
+		//permite seleccionar un objeto y utilizarlo como punto de eje el cual puede girar este objeto
+		
+				----object screw
+				//permite utilizar tanto el pivote del eje como el pivote del objeto anclado
+		
+		--screw
+		//cantidad de veces que el tornillo gira
+		
+		--angel
+		//modifica el angulo de torción de el screw
+		
+		--steps
+		//modifica igual que los angulos, pero solo las mayas
+		
+		--render step
+		//lo mismo que el anterior, pero en el render
+		
+		--iteration
+		//aumenta un segmento de tornillo hacia el eje anteriormente seleccionado
+		
+///////////////////solidifi/////////////////////////////////////////
+//permite solidificar las aristas
+
+		--thickness
+		//permite darle grosor a las subdiviciones realizadas
+		
+		--offset
+		//lo mueve con respecto al centro de gravedad que te han dado
+		
+		CREACE
+	//pliegue
+	
+		--inner
+		//interior- modifica la parte interior de una maya
+		
+		--outer
+		//exterior- modifcica la parte esterior de una maya
+		
+		--rim
+		//borde-modifica la parte del borde la las mayas
+		
+		--fil normal
+		//me permite una solidificacion superior y una inferios --¡importante!
+		
+		--even thickness
+		//actua sobre las esquinas más afiladas
+		
+		--higth quality normal 
+		//actua sobre todas las esquinas
+		
+		--fill rim
+		//rellenar borde, si no la colocas se perdera parte del objeto
+		
+		--only rim
+		//si marcas esta opcion solo se llenaran los bordes-efecto interesante
+
+		
+///////////////////subdivision surface/////////////////////////////////////////
+//hace la geometria más compleja añadiendo más aristas
+
+	catmull clark
+	//lo va transformando en una esfera
+	
+	normal
+	//lo mantendra igual al objeto que tenias
+	
+		----subdivicion
+		//aumenta la cantidad de aristas que tienen
+		
+				--view
+				//las subdiviciones se agregan aqui
+			
+				--render
+				//aqui se agregan las diviciones del render
+				
+///////////////////wave/////////////////////////////////////////////////////////
+//ola- ondula la maya de manera que queda como una ola
+
+		--offset
+		//marca el momento en el que inicia la animacion
+		
+		--live
+		//marca el momento en el que acaba la animación
+		
+		--speed
+		//modifica la velocidad
+		
+		--height
+		//modifica la altura de la ola
+		
+		--width
+		//modifica lo ancho de la ola
+		
+		--narrowness
+		//estrechez- modifica la estrechura
+		
+///////////////////explode/////////////////////////////////////////////////////////
+//hace desapararecer un objeto, para usarlo correctamente se necesita tener un grupo de vertices y un grupo de particulas
+
+seleccionas tu grupo de vertices
+
+		--unborn
+		//mostrara cuando las particulas no han nacido
+		
+		--live
+		//mostrara cuando las particulas este vivas
+		
+		--size
+		//mostrara las particulas con el mismo tamaño del mesh 
+		
+///////////////////fluid/////////////////////////////////////////////////////////
+//physics convierte un elemento en agua, convinandolo con otros puede hacer multiples efectos
+
+		--fluid
+		//permite convertir un elemento en agua
+		
+			--fluid
+			//no se tienen datos
+			
+			--dominion
+			//permite que un objeto se acople a el que tiene en su interior y se derrita
+			
+		fluid world
+		//premite seleccionar de que viscosidad sera el agua
+		
+/////////////////cloth//////////////////////////////////////////////////////////////
+//permite hacer una animacion donde el objeto se convierta en tela
+
+		cottom
+		//algodon
+		
+		Denim
+		//mezclilla
+		
+		Leather
+		//cuero
+		
+		Rubber
+		//caucho
+		
+		silk
+		//seda
+		
+		
+		////////////////////////SOLDAR/////////////////////
+		control + J
+		//permite unir dos figuras en una
+		
+		ALT + M
+		//permite unir dos vertices en uno
+		

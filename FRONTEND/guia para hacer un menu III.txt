@@ -1,0 +1,103 @@
+--------------CREANDO MENUS----------------
+.container{
+    margin: 0 auto; 
+	(CONTENEMOS EL ELEMENTO SIEMPRE EN EL MEDIO DEPENDIENDO DE SU TAMAÑO)
+	
+    width: 80% ;
+	(TENDRA UN ANCHO DE 80% Y GRACIAS AL MARGIN ESTARA EN ELCENTRO)
+	}
+
+nav{
+(ESTE NAV LE DARA EL FONDO)
+
+	height:40px;
+	(TENDRA UN ALTO)
+
+	widht:100%;
+	(SOBRE ESCRIBIMOS EL WIDTH ANTERIOR PARA QUE OCUPE TODA LA PANTALLLA)
+
+	background-color: #455868;
+	(ponemos el fondo)
+
+	font-weight:blod;
+	(ponemos negritas)
+
+	border-bottom:7px solid #e84b37;
+	(parte del diseño del menu)
+}
+
+nav ul{
+(este sera el espacio donde se crearan los botones)
+
+padding:0;
+(el nav me traera por defecto unos padding que hay que borrar)
+
+height:40px;
+(calculamos que sea el alto del nav)
+
+width:600px;
+(es la separacion de cada  A entre si y el tamaño total de el menu como tal)
+
+list-style:none;
+(para quitarle el disco de lista)
+}
+
+nav ul li {
+(modificaremos la caja de cada elemento de la lista)
+
+display:inline;
+(las listas estaran alineadas horizontal ahora, ya que por defecto estas estaban una encima de la otra)
+
+float:left;
+(los elementos en linea se alinearan a la izquierda para que se vean bonitos)
+
+}
+menu ul li a{
+
+width:100px;
+(es importante saber que este ancho se multiplicara por todos los elementos A y el resultado tienen que caber en el ancho de el UL como en este caso son 6 A entonces seria 100px *6A= osea 600px que es el ancho de el ul asi que deberia quedar perfecto)
+
+ line-height: 40px;
+ (esta propiedad pondra el height y ademas se ante pondra a la a dejandola en el centro,
+ muy util)
+
+display:inline-block;
+(cada A se quera como un bloque y estaran juntas)
+
+text-align:center;
+(parte del diseño para que se vea bien bonito en todo el centro)
+
+color:#fff;
+(eleguimos un color al gusto)
+
+text-decoration:none;
+(se le quita el subrayado)
+
+text-shadow: 1px 1px 0px #283744;
+(se le agrega una sombra al texto y como solo es al texto no arruina nuestro  tamaño total del ul)
+
+border-right: 1px solid #576979;
+(parte del diseño aunque este pixel extra estropea nuestro  tamaño total, para arreglarlo podemos re calcular el tamaño del ul o podemos aplicar una propiedad nueva de css3 que es box-sizing )
+
+box-sizing:border-box;
+(esta propiedad te permite acomodar todos los pixeles de alguna otra propiedad con respecto a el wigth principal de esta etiqueta ej si teniamos en esta etiqueta 100px y el border-box nos lo arruino, pues ahora border-box se acoplara a estos 100px)
+}
+
+nav li:last-child a{
+(seleccionamos el ultimo elemento a de la etiqueta li)
+
+		border-right:0px;
+		(parte del diseño para que no se vea el borde blanco)
+}
+
+nav a#pull{
+(seleccionamos la etiqueta a que tenga un id llamado pull y este elemento lo usaremos mas adelante solo que por ahora no lo utilizaremos)
+
+	display:none;
+	(ojo no lo estamos borrando solo le decimos que lo utilizaremos despues)
+}
+
+nav a:hover, .menu a:active{
+background-color:#e84b37;
+
+}

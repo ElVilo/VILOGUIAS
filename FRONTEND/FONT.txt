@@ -1,0 +1,17 @@
+como agregar una fuente al html
+ 
+ 
+
+@font-face{
+//*utilizamos esta pro*//
+ 
+						font-family:(nombre deseado);
+						//*se eligue un nombre para que se alma*//
+						
+						src:url(Lora-Regular.ttf);
+						//*se describe la ruta relativa*//
+}
+
+p{
+font-family:'(nombre que ya habias eleguido)';
+}
