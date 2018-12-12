@@ -441,7 +441,7 @@ $connect = mysqli_connect('localhost', 'gabriel','','maraton_2');
 	    //V/ ejecutamos el PDOStatement
 		
 	////////////////////////////////FUNCIONES PDO//////////////////////////
-	 $VARIABLE_PDO->exec("SET CHARACTER utf8");
+	 $variable_pdo->exec("SET CHARACTER SET UTF8");
 	 //permite cambiar la combinacion de caracteres al utf8 de manera que leera los acentos la ñ y esas cosas
 	 
 
