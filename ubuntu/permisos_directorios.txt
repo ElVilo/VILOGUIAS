@@ -1,0 +1,37 @@
+ sudo adduser vilo www-data
+ 
+ sudo chown -R www-data:www-data /var/www/html/SAVURG/Views/avatares/
+ 
+ sudo chmod -R g+rwX /var/www/html/SAVURG/Views/avatares/
+ 
+ 
+ sudo chown -R www-data:www-data /var/www/html/SAVURG/Views/archivos/
+ 
+ sudo chmod -R g+rwX /var/www/html/SAVURG/Views/archivos/
+ 
+ sudo chown -R www-data:w	ww-data /var/www/html/SAVURG/Views/archivos/publicaciones/
+ 
+  sudo chmod -R g+rwX /var/www/html/SAVURG/Views/archivos/publicaciones/
+  
+sudo chown -R www-data:www-data /var/www/html/SAVURG/Views/archivos/publicaciones/comentarios/
+
+  sudo chmod -R g+rwX /var/www/html/SAVURG/Views/archivos/publicaciones/comentarios/
+  
+  sudo chown -R www-data:www-data /var/www/html/SAVURG/Views/archivos/clases/
+  
+  sudo chmod -R g+rwX /var/www/html/SAVURG/Views/archivos/clases/
+  
+  sudo chown -R www-data:www-data /var/www/html/SAVURG/Views/archivos/clases/evaluaciones/
+
+sudo chmod -R g+rwX /var/www/html/SAVURG/Views/archivos/clases/evaluaciones/
+
+
+sudo chown -R www-data:www-data /var/www/html/SAVURG/Views/archivos/clases/evaluaciones/enviadas/
+
+sudo chmod -R g+rwX /var/www/html/SAVURG/Views/archivos/clases/evaluaciones/enviadas/
+
+
+nobody.nogroup
+
+
+ 

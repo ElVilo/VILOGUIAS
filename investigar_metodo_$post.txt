@@ -1,0 +1,1 @@
+$login=htmlentities(addslashes($_POST['login[));

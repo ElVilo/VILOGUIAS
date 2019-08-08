@@ -1,0 +1,12 @@
+gimp
+///////////////////////
+//////editar combinaciones de teclas
+	editar+combinaciones de teclas
+//////hacer una imagen transparente
+capa+transparencia+añadir canal alfa
+/////hacer una imagen con color
+	imagen+modo+rgb
+////elegir el nivel de color de negro
+	color+nivel ====0.80====2.30
+////curvas
+	color+curves
