@@ -1,0 +1,15 @@
+extension lavarel 5 snippets
+--styde.net
+--linkedin.com
+//crear test
+ php artisan make:test WelcomeUsersTest
+
+//alias y creador de pruebas
+alias a=vendor/bin/phpunit
+
+//crear controlador
+ php artisan make:controller UserController
+
+ INVESTIGAR
+ //arreglar este metodo
+//$this->withOutExcecptionHandling();
